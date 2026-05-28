@@ -1,0 +1,62 @@
+arch/arm64/kernel/fpsimd.c:230:	 * resumes from dovetail_context_switch(), which always happen
+arch/x86/kvm/vmx/vmx.c:2509:		 * scheduling (see dovetail_context_switch()).
+include/linux/dovetail.h:174:bool dovetail_context_switch(struct dovetail_altsched_context *out,
+kernel/dovetail.c:396:	 * switched in by dovetail_context_switch() over the oob
+kernel/evl/sched/core.c:661:		irq_pipeline_send_remote(RESCHEDULE_OOB_IPI, &rq->resched);
+kernel/evl/sched/core.c:679:	dovetail_resume_oob(&root->altsched);
+kernel/evl/sched/core.c:754:	dovetail_context_switch(&prev->altsched, &next->altsched);
+kernel/evl/sched/core.c:774:	 *                               back from dovetail_context_switch()
+kernel/evl/tick.c:320:	irq_pipeline_send_remote(TIMER_OOB_IPI,
+kernel/sched/core.c:5357:		 * dovetail_context_switch() can deal with preempting
+kernel/sched/core.c:10160:bool dovetail_context_switch(struct dovetail_altsched_context *out,
+include/evl/sched/queue.h:22:#define EVL_MLQ_LEVELS  (MAX_RT_PRIO + 1) /* i.e. EVL_CORE_NR_PRIO */
+include/evl/sched/rt.h:20:#define EVL_CORE_MAX_PRIO  MAX_RT_PRIO
+include/evl/sched/rt.h:25:#define EVL_FIFO_MAX_PRIO  (MAX_USER_RT_PRIO - 1)
+include/linux/sched/prio.h:11: * priority is 0..MAX_RT_PRIO-1, and SCHED_NORMAL/SCHED_BATCH
+include/linux/sched/prio.h:12: * tasks are in the range MAX_RT_PRIO..MAX_PRIO-1. Priority
+include/linux/sched/prio.h:16:#define MAX_RT_PRIO		100
+include/linux/sched/prio.h:19:#define MAX_PRIO		(MAX_RT_PRIO + NICE_WIDTH)
+include/linux/sched/prio.h:20:#define DEFAULT_PRIO		(MAX_RT_PRIO + NICE_WIDTH / 2)
+include/linux/sched/prio.h:24: * to static priority [ MAX_RT_PRIO..MAX_PRIO-1 ],
+include/linux/sched/rt.h:11:	return unlikely(prio < MAX_RT_PRIO && prio >= MAX_DL_PRIO);
+include/linux/sched/rt.h:16:	return unlikely(prio < MAX_RT_PRIO);
+kernel/evl/thread.c:360:		if (prio >= MAX_RT_PRIO)
+kernel/evl/thread.c:361:			prio = MAX_RT_PRIO - 1;
+kernel/evl/thread.c:1287:	else if (kprio >= MAX_USER_RT_PRIO)
+kernel/evl/thread.c:1288:		kprio = MAX_USER_RT_PRIO - 1;
+kernel/futex/core.c:565:	 * (i.e. threads with a priority lower than MAX_RT_PRIO)
+kernel/futex/core.c:566:	 * - or MAX_RT_PRIO for non-RT threads.
+kernel/futex/core.c:570:	prio = min(current->normal_prio, MAX_RT_PRIO);
+kernel/sched/core.c:174:		return MAX_RT_PRIO + NICE_WIDTH; /* 140 */
+kernel/sched/core.c:177:		return MAX_RT_PRIO + MAX_NICE + 1; /* 120, squash ext */
+kernel/sched/core.c:179:	return MAX_RT_PRIO + MAX_NICE; /* 119, squash fair */
+kernel/sched/core.c:221:	if (pa == MAX_RT_PRIO + MAX_NICE)	/* fair */
+kernel/sched/core.c:225:	if (pa == MAX_RT_PRIO + MAX_NICE + 1)	/* ext */
+kernel/sched/core.c:1374:	int prio = p->static_prio - MAX_RT_PRIO;
+kernel/sched/core.c:3568:	struct sched_param param = { .sched_priority = MAX_RT_PRIO - 1 };
+kernel/sched/core.c:9925:	return PRIO_TO_NICE(prio - 1 + MAX_RT_PRIO);
+kernel/sched/core.c:9937:	idx = NICE_TO_PRIO(nice) - MAX_RT_PRIO;
+kernel/sched/cpupri.c:52:		cpupri = MAX_RT_PRIO-1 - prio;	/* 1 ... 99 */
+kernel/sched/cpupri.c:55:	case MAX_RT_PRIO-1:
+kernel/sched/cpupri.c:59:	case MAX_RT_PRIO:
+kernel/sched/cpupri.h:3:#define CPUPRI_NR_PRIORITIES	(MAX_RT_PRIO+1)
+kernel/sched/ext.c:3693:		weight = sched_prio_to_weight[p->static_prio - MAX_RT_PRIO];
+kernel/sched/rt.c:71:	for (i = 0; i < MAX_RT_PRIO; i++) {
+kernel/sched/rt.c:76:	__set_bit(MAX_RT_PRIO, array->bitmap);
+kernel/sched/rt.c:79:	rt_rq->highest_prio.curr = MAX_RT_PRIO-1;
+kernel/sched/rt.c:80:	rt_rq->highest_prio.next = MAX_RT_PRIO-1;
+kernel/sched/rt.c:222:	rt_rq->highest_prio.curr = MAX_RT_PRIO-1;
+kernel/sched/rt.c:412:		rq->rt.highest_prio.next = MAX_RT_PRIO-1;
+kernel/sched/rt.c:1140:		rt_rq->highest_prio.curr = MAX_RT_PRIO-1;
+kernel/sched/rt.c:1714:	BUG_ON(idx >= MAX_RT_PRIO);
+kernel/sched/sched.h:177: *  scale_load(sched_prio_to_weight[NICE_TO_PRIO(0)-MAX_RT_PRIO]) == NICE_0_LOAD
+kernel/sched/sched.h:317:	DECLARE_BITMAP(bitmap, MAX_RT_PRIO+1); /* include 1 bit for delimiter */
+kernel/sched/sched.h:318:	struct list_head queue[MAX_RT_PRIO];
+kernel/sched/syscalls.c:26:		prio = MAX_RT_PRIO - 1 - rt_prio;
+kernel/sched/syscalls.c:193:	return p->prio - MAX_RT_PRIO;
+kernel/sched/syscalls.c:559:	 * 1..MAX_RT_PRIO-1, valid priority for SCHED_NORMAL,
+kernel/sched/syscalls.c:562:	if (attr->sched_priority > MAX_RT_PRIO-1)
+kernel/sched/syscalls.c:851: *   MAX_RT_PRIO / 2
+kernel/sched/syscalls.c:858:	struct sched_param sp = { .sched_priority = MAX_RT_PRIO / 2 };
+kernel/sched/syscalls.c:1533:		ret = MAX_RT_PRIO-1;
+kernel/trace/trace.c:1941:	max_data->nice = tsk->static_prio - 20 - MAX_RT_PRIO;

@@ -1,0 +1,18 @@
+Linux ubuntu 6.12.67-67-CUSTOM+ #2 SMP PREEMPT DOVETAIL Thu Mar 26 05:47:01 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+
+grep: /boot/config-6.12.67-67-CUSTOM+: No such file or directory
+
+[    0.000000] Linux version 6.12.67-67-CUSTOM+ (ubuntu@ubuntu) (gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #2 SMP PREEMPT DOVETAIL Thu Mar 26 05:47:01 UTC 2026
+[    0.000000] IRQ pipeline enabled
+[    2.604607] irqchip rp1_irq_chip is not pipeline-safe!
+
+0000000000000000 T dovetail_context_switch
+0000000000000000 T dovetail_resume_inband
+0000000000000000 T dovetail_leave_inband
+0000000000000000 T dovetail_start_altsched
+0000000000000000 T dovetail_start
+0000000000000000 T dovetail_stop
+0000000000000000 T dovetail_init_altsched
+0000000000000000 T dovetail_stop_altsched
+0000000000000000 T dovetail_call_mayday
+0000000000000000 r __ksymtab_dovetail_context_switch

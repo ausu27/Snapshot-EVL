@@ -1,0 +1,611 @@
+grep: kernel/irq/msi.o: binary file matches
+grep: kernel/irq/chip.o: binary file matches
+kernel/irq/msi.c:837:		  "MSI domain irqchip %s is not pipeline-safe!", chip->name);
+kernel/irq/chip.c:54:		  "irqchip %s is not pipeline-safe!", chip->name);
+grep: arch/arm64/boot/Image: binary file matches
+drivers/irqchip/irq-mips-cpu.c:52:static struct irq_chip mips_cpu_irq_controller = {
+drivers/irqchip/irq-mips-cpu.c:112:static struct irq_chip mips_mt_cpu_irq_controller = {
+drivers/irqchip/irq-mips-cpu.c:155:	struct irq_chip *chip;
+drivers/irqchip/irq-sun6i-r.c:174:static struct irq_chip sun6i_r_intc_nmi_chip = {
+drivers/irqchip/irq-sun6i-r.c:187:static struct irq_chip sun6i_r_intc_wakeup_chip = {
+drivers/irqchip/irq-stm32-exti.c:119:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-rda-intc.c:61:static struct irq_chip rda_irq_chip = {
+drivers/irqchip/irq-loongson-htvec.c:44:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-loongson-htvec.c:105:static struct irq_chip htvec_irq_chip = {
+drivers/irqchip/irq-sunxi-nmi.c:89:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-loongson-pch-lpc.c:96:static const struct irq_chip pch_lpc_irq_chip = {
+drivers/irqchip/irq-loongson-pch-lpc.c:108:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-gic-v3-mbi.c:34:static struct irq_chip mbi_irq_chip = {
+drivers/irqchip/qcom-pdc.c:191:static struct irq_chip qcom_pdc_gic_chip = {
+drivers/irqchip/irq-ti-sci-intr.c:37:static struct irq_chip ti_sci_intr_irq_chip = {
+drivers/irqchip/irq-hip04.c:213:static struct irq_chip hip04_irq_chip = {
+drivers/irqchip/qcom-irq-combiner.c:50:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/qcom-irq-combiner.c:95:static struct irq_chip irq_chip = {
+drivers/irqchip/qcom-irq-combiner.c:104:	irq_set_chip_and_handler(irq, &irq_chip, handle_level_irq);
+drivers/irqchip/irq-renesas-rza1.c:44:	struct irq_chip chip;
+drivers/irqchip/irq-ath79-misc.c:35:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-ath79-misc.c:99:static struct irq_chip ath79_misc_irq_chip = {
+drivers/irqchip/irq-tegra.c:201:static struct irq_chip tegra_ictlr_chip = {
+drivers/irqchip/irq-mchp-eic.c:143:static struct irq_chip mchp_eic_chip = {
+drivers/irqchip/irq-mmp.c:139:struct irq_chip icu_irq_chip = {
+drivers/irqchip/irq-mmp.c:149:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-uniphier-aidet.c:84:static struct irq_chip uniphier_aidet_irq_chip = {
+drivers/irqchip/irq-loongson-pch-pic.c:158:static struct irq_chip pch_pic_irq_chip = {
+drivers/irqchip/irq-imx-gpcv2.c:127:static struct irq_chip gpcv2_irqchip_data_chip = {
+drivers/irqchip/irq-mxs.c:117:static struct irq_chip mxs_icoll_chip = {
+drivers/irqchip/irq-mxs.c:125:static struct irq_chip asm9260_icoll_chip = {
+drivers/irqchip/irq-mxs.c:145:	struct irq_chip *chip;
+drivers/irqchip/irq-mvebu-sei.c:114:static struct irq_chip mvebu_sei_irq_chip = {
+drivers/irqchip/irq-mvebu-sei.c:131:static struct irq_chip mvebu_sei_ap_irq_chip = {
+drivers/irqchip/irq-mvebu-sei.c:159:static struct irq_chip mvebu_sei_cp_irq_chip = {
+drivers/irqchip/irq-mvebu-sei.c:316:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-partition-percpu.c:34:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:45:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:58:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:73:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:86:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:98:	struct irq_chip *chip = irq_desc_get_chip(part->chained_desc);
+drivers/irqchip/irq-partition-percpu.c:104:static struct irq_chip partition_irq_chip = {
+drivers/irqchip/irq-partition-percpu.c:116:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-ts4800.c:58:static const struct irq_chip ts4800_chip = {
+drivers/irqchip/irq-ts4800.c:84:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-i8259.c:43:static struct irq_chip i8259A_chip = {
+drivers/irqchip/irq-al-fic.c:110:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-brcmstb-l2.c:103:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-ti-sci-inta.c:535:static struct irq_chip ti_sci_inta_irq_chip = {
+drivers/irqchip/irq-ti-sci-inta.c:589:static struct irq_chip ti_sci_inta_msi_irq_chip = {
+drivers/irqchip/irq-loongson-htpic.c:32:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-gic.c:377:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-gic.c:880:static const struct irq_chip gic_chip = {
+drivers/irqchip/irq-gic.c:897:static const struct irq_chip gic_chip_mode1 = {
+drivers/irqchip/irq-gic.c:1059:	const struct irq_chip *chip;
+drivers/irqchip/irq-vt8500.c:132:static struct irq_chip vt8500_irq_chip = {
+drivers/irqchip/irq-sun4i.c:85:static struct irq_chip sun4i_irq_chip = {
+drivers/irqchip/irq-mvebu-pic.c:77:static const struct irq_chip mvebu_pic_chip = {
+drivers/irqchip/irq-mvebu-pic.c:106:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-renesas-intc-irqpin.c:65:	struct irq_chip irq_chip;
+drivers/irqchip/irq-renesas-intc-irqpin.c:339:	irq_set_chip_and_handler(virq, &p->irq_chip, handle_level_irq);
+drivers/irqchip/irq-renesas-intc-irqpin.c:377:	struct irq_chip *irq_chip;
+drivers/irqchip/irq-renesas-intc-irqpin.c:508:	irq_chip = &p->irq_chip;
+drivers/irqchip/irq-renesas-intc-irqpin.c:509:	irq_chip->name = "intc-irqpin";
+drivers/irqchip/irq-renesas-intc-irqpin.c:510:	irq_chip->irq_mask = disable_fn;
+drivers/irqchip/irq-renesas-intc-irqpin.c:511:	irq_chip->irq_unmask = enable_fn;
+drivers/irqchip/irq-renesas-intc-irqpin.c:512:	irq_chip->irq_set_type = intc_irqpin_irq_set_type;
+drivers/irqchip/irq-renesas-intc-irqpin.c:513:	irq_chip->irq_set_wake = intc_irqpin_irq_set_wake;
+drivers/irqchip/irq-renesas-intc-irqpin.c:514:	irq_chip->flags	= IRQCHIP_MASK_ON_SUSPEND;
+drivers/irqchip/irq-loongson-eiointc.c:195:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-loongson-eiointc.c:237:static struct irq_chip eiointc_irq_chip = {
+drivers/irqchip/irq-lpc32xx.c:132:static const struct irq_chip lpc32xx_chip = {
+drivers/irqchip/irq-lpc32xx.c:155:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-clps711x.c:120:static struct irq_chip clps711x_intc_chip = {
+drivers/irqchip/irq-armada-370-xp.c:237:static struct irq_chip mpic_msi_irq_chip = {
+drivers/irqchip/irq-armada-370-xp.c:276:static struct irq_chip mpic_msi_bottom_irq_chip = {
+drivers/irqchip/irq-armada-370-xp.c:446:static struct irq_chip mpic_ipi_irqchip = {
+drivers/irqchip/irq-armada-370-xp.c:591:static struct irq_chip mpic_irq_chip = {
+drivers/irqchip/irq-armada-370-xp.c:671:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-ftintc010.c:49:	struct irq_chip chip;
+drivers/irqchip/irq-ftintc010.c:117:static struct irq_chip ft010_irq_chip = {
+drivers/irqchip/irq-mvebu-odmi.c:72:static struct irq_chip odmi_irq_chip = {
+drivers/irqchip/irq-owl-sirq.c:199:static struct irq_chip owl_sirq_chip = {
+drivers/irqchip/irq-bcm2835.c:166:static struct irq_chip armctrl_chip = {
+drivers/irqchip/irq-starfive-jh8100-intc.c:73:static struct irq_chip intc_dev = {
+drivers/irqchip/irq-starfive-jh8100-intc.c:96:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-vf610-mscm-ir.c:113:static struct irq_chip vf610_mscm_ir_irq_chip = {
+drivers/irqchip/irq-gic-v4.c:74: *   specially crafted irq_chip implementation.
+drivers/irqchip/irq-mips-gic.c:57:static struct irq_chip gic_level_irq_controller, gic_edge_irq_controller;
+drivers/irqchip/irq-mips-gic.c:288:static struct irq_chip gic_level_irq_controller = {
+drivers/irqchip/irq-mips-gic.c:298:static struct irq_chip gic_edge_irq_controller = {
+drivers/irqchip/irq-mips-gic.c:344:static struct irq_chip gic_local_irq_controller = {
+drivers/irqchip/irq-mips-gic.c:413:static struct irq_chip gic_all_vpes_local_irq_controller = {
+drivers/irqchip/irq-apple-aic.c:454:static struct irq_chip aic_chip = {
+drivers/irqchip/irq-apple-aic.c:463:static struct irq_chip aic2_chip = {
+drivers/irqchip/irq-apple-aic.c:607:static struct irq_chip fiq_chip = {
+drivers/irqchip/irq-apple-aic.c:625:	struct irq_chip *chip = &aic_chip;
+drivers/irqchip/irq-mvebu-gicp.c:72:static struct irq_chip gicp_irq_chip = {
+drivers/irqchip/irq-pruss-intc.c:364:static struct irq_chip pruss_irqchip = {
+drivers/irqchip/irq-pruss-intc.c:482:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-meson-gpio.c:418:static struct irq_chip meson_gpio_irq_chip = {
+drivers/irqchip/irq-mtk-sysirq.c:60:static struct irq_chip mtk_sysirq_chip = {
+drivers/irqchip/irq-ls1x.c:40:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-csky-mpintc.c:164:static struct irq_chip csky_irq_chip = {
+drivers/irqchip/irq-qcom-mpm.c:190:static struct irq_chip qcom_mpm_chip = {
+drivers/irqchip/irq-imx-irqsteer.c:90:static const struct irq_chip imx_irqsteer_irq_chip = {
+drivers/irqchip/irq-xilinx-intc.c:107:static struct irq_chip intc_dev = {
+drivers/irqchip/irq-xilinx-intc.c:139:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-xtensa-pic.c:77:static struct irq_chip xtensa_irq_chip = {
+drivers/irqchip/irq-davinci-cp-intc.c:110:static struct irq_chip davinci_cp_intc_irq_chip = {
+drivers/irqchip/irq-jcore-aic.c:26:static struct irq_chip jcore_aic;
+drivers/irqchip/irq-jcore-aic.c:49:	struct irq_chip *aic = d->host_data;
+drivers/irqchip/irq-ls-extirq.c:87:static struct irq_chip ls_extirq_chip = {
+drivers/irqchip/irq-realtek-rtl.c:79:static struct irq_chip realtek_ictl_irq = {
+drivers/irqchip/irq-realtek-rtl.c:105:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm7120-l2.c:59:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-dw-apb-ictl.c:54:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-idt3243x.c:30:	struct irq_chip *host_chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm7038-l1.c:123:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm7038-l1.c:364:static struct irq_chip bcm7038_l1_irq_chip = {
+drivers/irqchip/irq-crossbar.c:60:static struct irq_chip crossbar_chip = {
+drivers/irqchip/irq-vic.c:181:static struct irq_chip vic_chip;
+drivers/irqchip/irq-vic.c:220:	struct irq_chip *host_chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-vic.c:366:static struct irq_chip vic_chip = {
+drivers/irqchip/irq-mtk-cirq.c:132:static struct irq_chip mtk_cirq_chip = {
+drivers/irqchip/irq-wpcm450-aic.c:111:static struct irq_chip wpcm450_aic_chip = {
+drivers/irqchip/irq-aspeed-i2c-ic.c:35:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm2836.c:60:static struct irq_chip bcm2836_arm_irqchip_timer = {
+drivers/irqchip/irq-bcm2836.c:77:static struct irq_chip bcm2836_arm_irqchip_pmu = {
+drivers/irqchip/irq-bcm2836.c:118:static struct irq_chip bcm2836_arm_irqchip_gpu = {
+drivers/irqchip/irq-bcm2836.c:129:static struct irq_chip bcm2836_arm_irqchip_dummy = {
+drivers/irqchip/irq-bcm2836.c:137:	struct irq_chip *chip;
+drivers/irqchip/irq-bcm2836.c:187:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm2836.c:226:static struct irq_chip bcm2836_arm_irqchip_ipi = {
+drivers/irqchip/irq-imx-intmux.c:117:static struct irq_chip imx_intmux_irq_chip __ro_after_init = {
+drivers/irqchip/irq-sifive-plic.c:195:static struct irq_chip plic_edge_chip = {
+drivers/irqchip/irq-sifive-plic.c:210:static struct irq_chip plic_chip = {
+drivers/irqchip/irq-sifive-plic.c:381:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-mst-intc.c:111:static struct irq_chip mst_intc_chip = {
+drivers/irqchip/irq-xtensa-mx.c:30:		struct irq_chip *irq_chip = d->host_data;
+drivers/irqchip/irq-xtensa-mx.c:31:		irq_set_chip_and_handler_name(irq, irq_chip,
+drivers/irqchip/irq-xtensa-mx.c:144:static struct irq_chip xtensa_mx_irq_chip = {
+drivers/irqchip/irq-riscv-aplic-direct.c:80:static struct irq_chip aplic_direct_chip = {
+drivers/irqchip/irq-riscv-aplic-direct.c:141:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-ls-scfg-msi.c:60:static struct irq_chip ls_scfg_msi_irq_chip = {
+drivers/irqchip/irq-ls-scfg-msi.c:131:static struct irq_chip ls_scfg_msi_parent_chip = {
+drivers/irqchip/irq-sni-exiu.c:123:static struct irq_chip exiu_irq_chip = {
+drivers/irqchip/irq-riscv-intc.c:109:static struct irq_chip riscv_intc_chip = {
+drivers/irqchip/irq-riscv-intc.c:116:static struct irq_chip andes_intc_chip = {
+drivers/irqchip/irq-riscv-intc.c:126:	struct irq_chip *chip = d->host_data;
+drivers/irqchip/irq-riscv-intc.c:178:static int __init riscv_intc_init_common(struct fwnode_handle *fn, struct irq_chip *chip)
+drivers/irqchip/irq-riscv-intc.c:213:	struct irq_chip *chip = &riscv_intc_chip;
+drivers/irqchip/irq-gic-v3-its.c:280:static struct irq_chip its_vpe_irq_chip;
+drivers/irqchip/irq-gic-v3-its.c:1986:static struct irq_chip its_irq_chip = {
+drivers/irqchip/irq-gic-v3-its.c:4089:static struct irq_chip its_vpe_irq_chip = {
+drivers/irqchip/irq-gic-v3-its.c:4234:static struct irq_chip its_vpe_4_1_irq_chip = {
+drivers/irqchip/irq-gic-v3-its.c:4384:static struct irq_chip its_sgi_irq_chip = {
+drivers/irqchip/irq-gic-v3-its.c:4539:	struct irq_chip *irqchip = &its_vpe_irq_chip;
+drivers/irqchip/irq-bcm6345-l1.c:120:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-bcm6345-l1.c:270:static struct irq_chip bcm6345_l1_irq_chip = {
+drivers/irqchip/irq-loongarch-cpu.c:68:static struct irq_chip cpu_irq_controller = {
+drivers/irqchip/irq-riscv-imsic-early.c:75:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-loongson-liointc.c:74:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-riscv-imsic-platform.c:133:static struct irq_chip imsic_irq_base_chip = {
+drivers/irqchip/irq-bcm2712-mip.c:62:static struct irq_chip mip_middle_irq_chip = {
+drivers/irqchip/irq-renesas-rzg2l.c:75: * @irqchip:	Pointer to struct irq_chip
+drivers/irqchip/irq-renesas-rzg2l.c:82:	const struct irq_chip		*irqchip;
+drivers/irqchip/irq-renesas-rzg2l.c:434:static const struct irq_chip rzg2l_irqc_chip = {
+drivers/irqchip/irq-renesas-rzg2l.c:451:static const struct irq_chip rzfive_irqc_chip = {
+drivers/irqchip/irq-renesas-rzg2l.c:532:				  const struct irq_chip *irq_chip)
+drivers/irqchip/irq-renesas-rzg2l.c:553:	rzg2l_irqc_data->irqchip = irq_chip;
+drivers/irqchip/irq-ixp4xx.c:53:	struct irq_chip irqchip;
+drivers/irqchip/irq-or1k-pic.c:16:	struct irq_chip chip;
+drivers/irqchip/spear-shirq.c:38: * irq_chip:	Interrupt controller chip used for this instance,
+drivers/irqchip/spear-shirq.c:49:	struct irq_chip		*irq_chip;
+drivers/irqchip/spear-shirq.c:82:static struct irq_chip shirq_chip = {
+drivers/irqchip/spear-shirq.c:92:	.irq_chip	= &shirq_chip,
+drivers/irqchip/spear-shirq.c:108:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:116:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:124:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:132:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:152:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:160:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:168:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:176:	.irq_chip	= &dummy_irq_chip,
+drivers/irqchip/spear-shirq.c:208:	if (!shirq->irq_chip)
+drivers/irqchip/spear-shirq.c:215:					 shirq->irq_chip, handle_simple_irq);
+drivers/irqchip/irq-goldfish-pic.c:36:	struct irq_chip *host_chip = irq_desc_get_chip(desc);
+drivers/irqchip/exynos-combiner.c:68:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/exynos-combiner.c:97:	struct irq_chip *chip = irq_get_chip(chip_data->parent_irq);
+drivers/irqchip/exynos-combiner.c:107:static struct irq_chip combiner_chip = {
+drivers/irqchip/irq-versatile-fpga.c:75:static const struct irq_chip fpga_chip = {
+drivers/irqchip/irq-versatile-fpga.c:84:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-aspeed-scu-ic.c:54:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-aspeed-scu-ic.c:123:static struct irq_chip aspeed_scu_ic_chip = {
+drivers/irqchip/irq-loongson-pch-msi.c:71:static struct irq_chip middle_irq_chip = {
+drivers/irqchip/irq-alpine-msi.c:51:static struct irq_chip alpine_msix_irq_chip = {
+drivers/irqchip/irq-alpine-msi.c:110:static struct irq_chip middle_irq_chip = {
+drivers/irqchip/irq-mscc-ocelot.c:105:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-gic-v3.c:640:	 * A secondary irq_chip should be in charge of LPI request,
+drivers/irqchip/irq-gic-v3.c:680:	 * A secondary irq_chip should be in charge of LPI request,
+drivers/irqchip/irq-gic-v3.c:1559:static struct irq_chip gic_chip = {
+drivers/irqchip/irq-gic-v3.c:1578:static struct irq_chip gic_eoimode1_chip = {
+drivers/irqchip/irq-gic-v3.c:1601:	struct irq_chip *chip = &gic_chip;
+drivers/irqchip/irq-imx-mu-msi.c:136:static struct irq_chip imx_mu_msi_parent_chip = {
+drivers/irqchip/irq-imx-mu-msi.c:194:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-gic-v3-its-fsl-mc-msi.c:18:static struct irq_chip its_msi_irq_chip = {
+drivers/irqchip/irq-ingenic-tcu.c:26:	struct irq_chip *irq_chip = irq_data_get_irq_chip(&desc->irq_data);
+drivers/irqchip/irq-ingenic-tcu.c:37:	chained_irq_enter(irq_chip, desc);
+drivers/irqchip/irq-ingenic-tcu.c:45:	chained_irq_exit(irq_chip, desc);
+drivers/irqchip/irq-stm32mp-exti.c:118:static struct irq_chip stm32mp_exti_chip;
+drivers/irqchip/irq-stm32mp-exti.c:119:static struct irq_chip stm32mp_exti_chip_direct;
+drivers/irqchip/irq-stm32mp-exti.c:468:static struct irq_chip stm32mp_exti_chip = {
+drivers/irqchip/irq-stm32mp-exti.c:480:static struct irq_chip stm32mp_exti_chip_direct = {
+drivers/irqchip/irq-stm32mp-exti.c:502:	struct irq_chip *chip;
+drivers/irqchip/irq-lan966x-oic.c:137:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-keystone.c:28:	struct irq_chip		 chip;
+drivers/irqchip/irq-sa11x0.c:57:static struct irq_chip sa1100_normal_chip = {
+drivers/irqchip/irq-gic-v2m.c:103:static struct irq_chip gicv2m_irq_chip = {
+drivers/irqchip/irq-sp7021-intc.c:79:static struct irq_chip sp_intc_chip;
+drivers/irqchip/irq-sp7021-intc.c:169:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/irqchip/irq-sp7021-intc.c:187:static struct irq_chip sp_intc_chip = {
+drivers/irqchip/irq-aspeed-vic.c:151:static struct irq_chip avic_chip = {
+drivers/irqchip/irq-loongarch-avec.c:206:static struct irq_chip avec_irq_controller = {
+drivers/irqchip/irq-loongarch-avec.c:219:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-rp1.c:809:	struct irq_chip *host_chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-rp1.c:965:static struct irq_chip rp1_gpio_irq_chip = {
+drivers/pinctrl/qcom/pinctrl-spmi-mpp.c:841:static const struct irq_chip pmic_mpp_irq_chip = {
+drivers/pinctrl/qcom/pinctrl-ssbi-mpp.c:794:static const struct irq_chip pm8xxx_mpp_irq_chip = {
+drivers/pinctrl/qcom/pinctrl-ssbi-gpio.c:669:static const struct irq_chip pm8xxx_irq_chip = {
+drivers/pinctrl/qcom/pinctrl-spmi-gpio.c:1041:static const struct irq_chip spmi_gpio_irq_chip = {
+drivers/pinctrl/qcom/pinctrl-msm.c:46: * @irq:            parent irq for the TLMM irq_chip.
+drivers/pinctrl/qcom/pinctrl-msm.c:1329:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/qcom/pinctrl-msm.c:1388:static const struct irq_chip msm_gpio_irq_chip = {
+drivers/pinctrl/pinctrl-keembay.c:1244:	struct irq_chip *parent_chip;
+drivers/pinctrl/pinctrl-keembay.c:1448:static struct irq_chip keembay_gpio_irqchip = {
+drivers/pinctrl/starfive/pinctrl-starfive-jh7110-sys.c:366:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/starfive/pinctrl-starfive-jh7100.c:1162:static const struct irq_chip starfive_irq_chip = {
+drivers/pinctrl/starfive/pinctrl-starfive-jh7100.c:1176:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/starfive/pinctrl-starfive-jh7110.c:825:static struct irq_chip jh7110_irq_chip = {
+drivers/pinctrl/starfive/pinctrl-starfive-jh7110-aon.c:99:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-amd.c:573:static const struct irq_chip amd_gpio_irqchip = {
+drivers/pinctrl/mvebu/pinctrl-armada-37xx.c:672:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/mvebu/pinctrl-armada-37xx.c:747:static const struct irq_chip armada_37xx_irqchip = {
+drivers/pinctrl/pinctrl-ingenic.c:3537:	struct irq_chip *irq_chip = irq_data_get_irq_chip(&desc->irq_data);
+drivers/pinctrl/pinctrl-ingenic.c:3540:	chained_irq_enter(irq_chip, desc);
+drivers/pinctrl/pinctrl-ingenic.c:3551:	chained_irq_exit(irq_chip, desc);
+drivers/pinctrl/pinctrl-ingenic.c:3705:static const struct irq_chip ingenic_gpio_irqchip = {
+drivers/pinctrl/pinctrl-microchip-sgpio.c:750:static const struct irq_chip microchip_sgpio_irqchip = {
+drivers/pinctrl/pinctrl-microchip-sgpio.c:762:	struct irq_chip *parent_chip = irq_desc_get_chip(desc);
+drivers/pinctrl/actions/pinctrl-owl.c:835:static const struct irq_chip owl_gpio_irqchip = {
+drivers/pinctrl/actions/pinctrl-owl.c:848:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-equilibrium.c:154:	struct irq_chip *ic = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-equilibrium.c:166:static const struct irq_chip eqbr_irq_chip = {
+drivers/pinctrl/intel/pinctrl-intel.c:1249:static const struct irq_chip intel_gpio_irq_chip = {
+drivers/pinctrl/intel/pinctrl-lynxpoint.c:547:	struct irq_chip *chip = irq_data_get_irq_chip(data);
+drivers/pinctrl/intel/pinctrl-lynxpoint.c:660:static const struct irq_chip lp_irqchip = {
+drivers/pinctrl/intel/pinctrl-baytrail.c:1339:static const struct irq_chip byt_gpio_irq_chip = {
+drivers/pinctrl/intel/pinctrl-baytrail.c:1353:	struct irq_chip *chip = irq_data_get_irq_chip(data);
+drivers/pinctrl/intel/pinctrl-cherryview.c:1384:static const struct irq_chip chv_gpio_irq_chip = {
+drivers/pinctrl/intel/pinctrl-cherryview.c:1402:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/spear/pinctrl-plgpio.c:359:static const struct irq_chip plgpio_irqchip = {
+drivers/pinctrl/spear/pinctrl-plgpio.c:372:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/pinctrl/nuvoton/pinctrl-ma35.c:487:static struct irq_chip ma35_gpio_irqchip = {
+drivers/pinctrl/nuvoton/pinctrl-ma35.c:503:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/pinctrl/nuvoton/pinctrl-npcm7xx.c:214:	struct irq_chip *chip;
+drivers/pinctrl/nuvoton/pinctrl-npcm7xx.c:332:static const struct irq_chip npcmgpio_irqchip = {
+drivers/pinctrl/nuvoton/pinctrl-wpcm450.c:295:static const struct irq_chip wpcm450_gpio_irqchip = {
+drivers/pinctrl/nuvoton/pinctrl-wpcm450.c:309:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/nuvoton/pinctrl-npcm8xx.c:98:	struct irq_chip		irq_chip;
+drivers/pinctrl/nuvoton/pinctrl-npcm8xx.c:212:	struct irq_chip *chip;
+drivers/pinctrl/nuvoton/pinctrl-npcm8xx.c:308:static struct irq_chip npcmgpio_irqchip = {
+drivers/pinctrl/nuvoton/pinctrl-npcm8xx.c:2370:		pctrl->gpio_bank[id].irq_chip = npcmgpio_irqchip;
+drivers/pinctrl/nuvoton/pinctrl-npcm8xx.c:2408:		girq->chip = &pctrl->gpio_bank[id].irq_chip;
+drivers/pinctrl/pinctrl-cy8c95x0.c:1066:static const struct irq_chip cy8c95x0_irqchip = {
+drivers/pinctrl/pinctrl-mcp23s08.c:598:static const struct irq_chip mcp23s08_irq_chip = {
+drivers/pinctrl/pinctrl-ocelot.c:1819:	struct irq_chip *parent_chip = irq_desc_get_chip(w->irq_desc);
+drivers/pinctrl/pinctrl-ocelot.c:1917:static struct irq_chip ocelot_level_irqchip = {
+drivers/pinctrl/pinctrl-ocelot.c:1927:static struct irq_chip ocelot_irqchip = {
+drivers/pinctrl/pinctrl-ocelot.c:1951:	struct irq_chip *parent_chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-at91.c:1690:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-at91.c:1727:	struct irq_chip		*gpio_irqchip;
+drivers/pinctrl/bcm/pinctrl-iproc-gpio.c:169:	struct irq_chip *irq_chip = irq_desc_get_chip(desc);
+drivers/pinctrl/bcm/pinctrl-iproc-gpio.c:172:	chained_irq_enter(irq_chip, desc);
+drivers/pinctrl/bcm/pinctrl-iproc-gpio.c:193:	chained_irq_exit(irq_chip, desc);
+drivers/pinctrl/bcm/pinctrl-iproc-gpio.c:315:static const struct irq_chip iproc_gpio_irq_chip = {
+drivers/pinctrl/bcm/pinctrl-nsp-gpio.c:261:static const struct irq_chip nsp_gpio_irq_chip = {
+drivers/pinctrl/bcm/pinctrl-bcm2835.c:460:	struct irq_chip *host_chip = irq_desc_get_chip(desc);
+drivers/pinctrl/bcm/pinctrl-bcm2835.c:724:static const struct irq_chip bcm2835_gpio_irq_chip = {
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:385: * irq_chip for gpio interrupts.
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:387:static struct irq_chip s3c64xx_gpio_irq_chip = {
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:420:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:595: * irq_chip for wakeup interrupts
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:597:static struct irq_chip s3c64xx_eint0_irq_chip = {
+drivers/pinctrl/samsung/pinctrl-s3c64xx.c:607:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/samsung/pinctrl-samsung.h:190: * @irq_chip: link to irq chip for external gpio and wakeup interrupts.
+drivers/pinctrl/samsung/pinctrl-samsung.h:218:	struct exynos_irq_chip *irq_chip;
+drivers/pinctrl/samsung/pinctrl-exynos.c:35:	struct irq_chip chip;
+drivers/pinctrl/samsung/pinctrl-exynos.c:43:				     struct exynos_irq_chip *irq_chip);
+drivers/pinctrl/samsung/pinctrl-exynos.c:46:static inline struct exynos_irq_chip *to_exynos_irq_chip(struct irq_chip *chip)
+drivers/pinctrl/samsung/pinctrl-exynos.c:53:	struct irq_chip *chip = irq_data_get_irq_chip(irqd);
+drivers/pinctrl/samsung/pinctrl-exynos.c:84:	struct irq_chip *chip = irq_data_get_irq_chip(irqd);
+drivers/pinctrl/samsung/pinctrl-exynos.c:107:	struct irq_chip *chip = irq_data_get_irq_chip(irqd);
+drivers/pinctrl/samsung/pinctrl-exynos.c:149:	struct irq_chip *chip = irq_data_get_irq_chip(irqd);
+drivers/pinctrl/samsung/pinctrl-exynos.c:293: * irq_chip for gpio interrupts.
+drivers/pinctrl/samsung/pinctrl-exynos.c:319:	irq_set_chip_and_handler(virq, &b->irq_chip->chip,
+drivers/pinctrl/samsung/pinctrl-exynos.c:401:		bank->irq_chip = devm_kmemdup(dev, &exynos_gpio_irq_chip,
+drivers/pinctrl/samsung/pinctrl-exynos.c:402:					   sizeof(*bank->irq_chip), GFP_KERNEL);
+drivers/pinctrl/samsung/pinctrl-exynos.c:403:		if (!bank->irq_chip) {
+drivers/pinctrl/samsung/pinctrl-exynos.c:407:		bank->irq_chip->chip.name = bank->name;
+drivers/pinctrl/samsung/pinctrl-exynos.c:408:		bank->irq_chip->chip.flags |= IRQCHIP_PIPELINE_SAFE;
+drivers/pinctrl/samsung/pinctrl-exynos.c:442:	struct irq_chip *chip = irq_data_get_irq_chip(irqd);
+drivers/pinctrl/samsung/pinctrl-exynos.c:460:				    struct exynos_irq_chip *irq_chip)
+drivers/pinctrl/samsung/pinctrl-exynos.c:473:		 *irq_chip->eint_wake_mask_value);
+drivers/pinctrl/samsung/pinctrl-exynos.c:475:	regmap_write(pmu_regs, irq_chip->eint_wake_mask_reg,
+drivers/pinctrl/samsung/pinctrl-exynos.c:476:		     *irq_chip->eint_wake_mask_value);
+drivers/pinctrl/samsung/pinctrl-exynos.c:481:				    struct exynos_irq_chip *irq_chip)
+drivers/pinctrl/samsung/pinctrl-exynos.c:495:	__raw_writel(*irq_chip->eint_wake_mask_value,
+drivers/pinctrl/samsung/pinctrl-exynos.c:496:		     clk_base + irq_chip->eint_wake_mask_reg);
+drivers/pinctrl/samsung/pinctrl-exynos.c:501: * irq_chip for wakeup interrupts
+drivers/pinctrl/samsung/pinctrl-exynos.c:602:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/samsung/pinctrl-exynos.c:626:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/samsung/pinctrl-exynos.c:650:		pend = readl(b->eint_base + b->irq_chip->eint_pend
+drivers/pinctrl/samsung/pinctrl-exynos.c:652:		mask = readl(b->eint_base + b->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:676:	const struct exynos_irq_chip *irq_chip;
+drivers/pinctrl/samsung/pinctrl-exynos.c:686:			irq_chip = match->data;
+drivers/pinctrl/samsung/pinctrl-exynos.c:699:		bank->irq_chip = devm_kmemdup(dev, irq_chip, sizeof(*irq_chip),
+drivers/pinctrl/samsung/pinctrl-exynos.c:701:		if (!bank->irq_chip)
+drivers/pinctrl/samsung/pinctrl-exynos.c:703:		bank->irq_chip->chip.name = bank->name;
+drivers/pinctrl/samsung/pinctrl-exynos.c:771:	struct exynos_irq_chip *irq_chip;
+drivers/pinctrl/samsung/pinctrl-exynos.c:773:	if (bank->irq_chip) {
+drivers/pinctrl/samsung/pinctrl-exynos.c:774:		irq_chip = bank->irq_chip;
+drivers/pinctrl/samsung/pinctrl-exynos.c:775:		irq_chip->set_eint_wakeup_mask(bank->drvdata, irq_chip);
+drivers/pinctrl/samsung/pinctrl-exynos.c:791:		save->eint_mask = readl(regs + bank->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:825:		save->eint_mask = readl(regs + bank->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:883:			 readl(regs + bank->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:892:		writel(save->eint_mask, regs + bank->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:914:			 readl(regs + bank->irq_chip->eint_mask
+drivers/pinctrl/samsung/pinctrl-exynos.c:923:		writel(save->eint_mask, regs + bank->irq_chip->eint_mask
+drivers/pinctrl/pinctrl-apple-gpio.c:334:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-apple-gpio.c:353:static const struct irq_chip apple_gpio_irqchip = {
+drivers/pinctrl/stm32/pinctrl-stm32.c:400:static struct irq_chip stm32_gpio_irq_chip = {
+drivers/pinctrl/pinctrl-at91-pio4.c:261:static struct irq_chip atmel_gpio_irq_chip = {
+drivers/pinctrl/pinctrl-at91-pio4.c:281:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-pistachio.c:1304:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-pistachio.c:1352:static const struct irq_chip pistachio_gpio_irq_chip = {
+drivers/pinctrl/pinctrl-st.c:1443:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-st.c:1454:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-st.c:1480:static const struct irq_chip st_gpio_irqchip = {
+drivers/pinctrl/renesas/pinctrl-rzg2l.c:2337:static const struct irq_chip rzg2l_gpio_irqchip = {
+drivers/pinctrl/sunxi/pinctrl-sunxi.c:45:static struct irq_chip sunxi_pinctrl_edge_irq_chip;
+drivers/pinctrl/sunxi/pinctrl-sunxi.c:46:static struct irq_chip sunxi_pinctrl_level_irq_chip;
+drivers/pinctrl/sunxi/pinctrl-sunxi.c:1158:static struct irq_chip sunxi_pinctrl_edge_irq_chip = {
+drivers/pinctrl/sunxi/pinctrl-sunxi.c:1170:static struct irq_chip sunxi_pinctrl_level_irq_chip = {
+drivers/pinctrl/sunxi/pinctrl-sunxi.c:1223:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-pic32.c:2095:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-pic32.c:2150:static const struct irq_chip pic32_gpio_irq_chip = {
+drivers/pinctrl/pinctrl-sx150x.c:590:static const struct irq_chip sx150x_irq_chip = {
+drivers/pinctrl/mediatek/mtk-eint.c:292:static struct irq_chip mtk_eint_irq_chip = {
+drivers/pinctrl/mediatek/mtk-eint.c:338:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pinctrl/pinctrl-single.c:198:	struct irq_chip chip;
+drivers/pinctrl/pinctrl-single.c:1530:	struct irq_chip *chip;
+drivers/pinctrl/pinctrl-stmfx.c:605:static const struct irq_chip stmfx_pinctrl_irq_chip = {
+drivers/pinctrl/pinctrl-aw9523.c:792:static const struct irq_chip aw9523_irq_chip = {
+drivers/mfd/db8500-prcmu.c:2538:static struct irq_chip prcmu_irq_chip = {
+drivers/mfd/wm8350-irq.c:455:static struct irq_chip wm8350_irq_chip = {
+drivers/mfd/rp1.c:152:static struct irq_chip rp1_irq_chip = {
+drivers/mfd/rp1.c:153:	.name            = "rp1_irq_chip",
+drivers/mfd/rp1.c:162:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/mfd/rp1.c:337:		irq_set_chip_and_handler(irq, &rp1_irq_chip, handle_level_irq);
+drivers/mfd/stmpe.c:1180:static struct irq_chip stmpe_irq_chip = {
+drivers/mfd/stmpe.c:1192:	struct irq_chip *chip = NULL;
+drivers/mfd/tps6594-core.c:611:	struct regmap_irq_chip *irq_chip;
+drivers/mfd/tps6594-core.c:628:		irq_chip = &tps65224_irq_chip;
+drivers/mfd/tps6594-core.c:632:		irq_chip = &tps6594_irq_chip;
+drivers/mfd/tps6594-core.c:637:	irq_chip->irq_drv_data = tps;
+drivers/mfd/tps6594-core.c:638:	irq_chip->name = devm_kasprintf(dev, GFP_KERNEL, "%s-%ld-0x%02x",
+drivers/mfd/tps6594-core.c:641:	if (!irq_chip->name)
+drivers/mfd/tps6594-core.c:645:				       0, irq_chip, &tps->irq_data);
+drivers/mfd/motorola-cpcap.c:140:static int cpcap_init_irq_chip(struct cpcap_ddata *cpcap, int irq_chip,
+drivers/mfd/motorola-cpcap.c:143:	struct regmap_irq_chip *chip = &cpcap_irq_chip[irq_chip];
+drivers/mfd/motorola-cpcap.c:159:				       chip, &cpcap->irqdata[irq_chip]);
+drivers/mfd/motorola-cpcap.c:162:			irq_chip, ret);
+drivers/mfd/palmas.c:468:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/palmas.c:473:	.irq_chip = &palmas_irq_chip,
+drivers/mfd/palmas.c:477:	.irq_chip = &palmas_irq_chip,
+drivers/mfd/palmas.c:481:	.irq_chip = &tps65917_irq_chip,
+drivers/mfd/palmas.c:572:				  driver_data->irq_chip, &palmas->irq_data);
+drivers/mfd/twl4030-irq.c:431: * All irq_chip methods get issued from code holding irq_desc[irq].lock,
+drivers/mfd/twl4030-irq.c:548:static struct irq_chip twl4030_sih_irq_chip = {
+drivers/mfd/twl4030-irq.c:676:	static struct irq_chip	twl4030_irq_chip;
+drivers/mfd/twl4030-irq.c:711:	 * clone dummy irq_chip since PIH can't *do* anything
+drivers/mfd/max8997-irq.c:152:static struct irq_chip max8997_irq_chip = {
+drivers/mfd/sprd-sc27xx-spi.c:41:	struct regmap_irq_chip irq_chip;
+drivers/mfd/sprd-sc27xx-spi.c:181:	ddata->irq_chip.name = dev_name(&spi->dev);
+drivers/mfd/sprd-sc27xx-spi.c:182:	ddata->irq_chip.status_base =
+drivers/mfd/sprd-sc27xx-spi.c:184:	ddata->irq_chip.unmask_base = pdata->irq_base + SPRD_PMIC_INT_EN;
+drivers/mfd/sprd-sc27xx-spi.c:185:	ddata->irq_chip.ack_base = 0;
+drivers/mfd/sprd-sc27xx-spi.c:186:	ddata->irq_chip.num_regs = 1;
+drivers/mfd/sprd-sc27xx-spi.c:187:	ddata->irq_chip.num_irqs = pdata->num_irqs;
+drivers/mfd/sprd-sc27xx-spi.c:195:	ddata->irq_chip.irqs = ddata->irqs;
+drivers/mfd/sprd-sc27xx-spi.c:201:				       &ddata->irq_chip, &ddata->irq_data);
+drivers/mfd/88pm860x-core.c:544:static struct irq_chip pm860x_irq_chip = {
+drivers/mfd/max8925-core.c:629:static struct irq_chip max8925_irq_chip = {
+drivers/mfd/ezx-pcap.c:162:static struct irq_chip pcap_irq_chip = {
+drivers/mfd/max8998-irq.c:143:static struct irq_chip max8998_irq_chip = {
+drivers/mfd/retu-mfd.c:123:	const struct regmap_irq_chip	*irq_chip;
+drivers/mfd/retu-mfd.c:130:		.irq_chip	= &retu_irq_chip,
+drivers/mfd/retu-mfd.c:137:		.irq_chip	= &tahvo_irq_chip,
+drivers/mfd/retu-mfd.c:265:	ret = retu_write(rdev, rdat->irq_chip->mask_base, 0xffff);
+drivers/mfd/retu-mfd.c:270:				  rdat->irq_chip, &rdev->irq_data);
+drivers/mfd/da9063-irq.c:173:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/da9063-irq.c:182:		irq_chip = &da9063_irq_chip;
+drivers/mfd/da9063-irq.c:184:		irq_chip = &da9063l_irq_chip;
+drivers/mfd/da9063-irq.c:189:			da9063->irq_base, irq_chip, &da9063->regmap_irq);
+drivers/mfd/mc13xxx.h:36:	struct regmap_irq_chip irq_chip;
+drivers/mfd/ab8500-core.c:429:static struct irq_chip ab8500_irq_chip = {
+drivers/mfd/qcom-pm8xxx.c:67:	struct irq_chip *irq_chip;
+drivers/mfd/qcom-pm8xxx.c:356:static struct irq_chip pm8xxx_irq_chip = {
+drivers/mfd/qcom-pm8xxx.c:369:	irq_domain_set_info(domain, irq, hwirq, chip->pm_irq_data->irq_chip,
+drivers/mfd/qcom-pm8xxx.c:472:static struct irq_chip pm8821_irq_chip = {
+drivers/mfd/qcom-pm8xxx.c:491:	.irq_chip = &pm8xxx_irq_chip,
+drivers/mfd/qcom-pm8xxx.c:497:	.irq_chip = &pm8821_irq_chip,
+drivers/mfd/intel_soc_pmic_crc.c:150:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/intel_soc_pmic_crc.c:158:	.irq_chip = &crystal_cove_irq_chip,
+drivers/mfd/intel_soc_pmic_crc.c:166:	.irq_chip = &crystal_cove_irq_chip,
+drivers/mfd/intel_soc_pmic_crc.c:195:				       0, config->irq_chip, &pmic->irq_chip_data);
+drivers/mfd/mc13xxx-core.c:447:	mc13xxx->irq_chip.name = dev_name(dev);
+drivers/mfd/mc13xxx-core.c:448:	mc13xxx->irq_chip.status_base = MC13XXX_IRQSTAT0;
+drivers/mfd/mc13xxx-core.c:449:	mc13xxx->irq_chip.mask_base = MC13XXX_IRQMASK0;
+drivers/mfd/mc13xxx-core.c:450:	mc13xxx->irq_chip.ack_base = MC13XXX_IRQSTAT0;
+drivers/mfd/mc13xxx-core.c:451:	mc13xxx->irq_chip.irq_reg_stride = MC13XXX_IRQSTAT1 - MC13XXX_IRQSTAT0;
+drivers/mfd/mc13xxx-core.c:452:	mc13xxx->irq_chip.init_ack_masked = true;
+drivers/mfd/mc13xxx-core.c:453:	mc13xxx->irq_chip.use_ack = true;
+drivers/mfd/mc13xxx-core.c:454:	mc13xxx->irq_chip.num_regs = MC13XXX_IRQ_REG_CNT;
+drivers/mfd/mc13xxx-core.c:455:	mc13xxx->irq_chip.irqs = mc13xxx->irqs;
+drivers/mfd/mc13xxx-core.c:456:	mc13xxx->irq_chip.num_irqs = ARRAY_SIZE(mc13xxx->irqs);
+drivers/mfd/mc13xxx-core.c:459:				  0, &mc13xxx->irq_chip, &mc13xxx->irq_data);
+drivers/mfd/bd9571mwv.c:210:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/bd9571mwv.c:227:		irq_chip = &bd9571mwv_irq_chip;
+drivers/mfd/bd9571mwv.c:233:		irq_chip = &bd9574mwf_irq_chip;
+drivers/mfd/bd9571mwv.c:253:				       irq_chip, &irq_data);
+drivers/mfd/rk8xx-core.c:771:		return dev_err_probe(dev, ret, "Failed to add irq_chip\n");
+drivers/mfd/da9062-core.c:596:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/da9062-core.c:660:			irq_chip = &da9061_irq_chip;
+drivers/mfd/da9062-core.c:664:			irq_chip = &da9062_irq_chip;
+drivers/mfd/da9062-core.c:675:					  -1, irq_chip, &chip->regmap_irq);
+drivers/mfd/max77686.c:166:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/max77686.c:184:		irq_chip = &max77686_irq_chip;
+drivers/mfd/max77686.c:189:		irq_chip = &max77802_irq_chip;
+drivers/mfd/max77686.c:211:				       IRQF_ONESHOT | IRQF_SHARED, 0, irq_chip,
+drivers/mfd/ucb1x00-core.c:381:static struct irq_chip ucb1x00_irqchip = {
+drivers/mfd/wm8994-irq.c:146:static struct irq_chip wm8994_edge_irq_chip = {
+drivers/mfd/tps6586x.c:129:	struct irq_chip		irq_chip;
+drivers/mfd/tps6586x.c:280:static struct irq_chip tps6586x_irq_chip = {
+grep: drivers/mfd/rp1.o: binary file matches
+drivers/mfd/tps65910.c:253:		dev_warn(tps65910->dev, "Failed to add irq_chip %d\n", ret);
+drivers/mfd/mt6397-irq.c:70:static struct irq_chip mt6397_irq_chip = {
+drivers/mfd/lp8788-irq.c:98:static struct irq_chip lp8788_irq_chip = {
+drivers/mfd/lp8788-irq.c:135:	struct irq_chip *chip = &lp8788_irq_chip;
+drivers/mfd/fsl-imx25-tsadc.c:30:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/mfd/max14577.c:366:	const struct regmap_irq_chip *irq_chip;
+drivers/mfd/max14577.c:407:		irq_chip = &max77836_muic_irq_chip;
+drivers/mfd/max14577.c:414:		irq_chip = &max14577_irq_chip;
+drivers/mfd/max14577.c:422:				  irq_flags, 0, irq_chip,
+drivers/mfd/Kconfig:1406:	  and it also adds the irq_chip parts for handling the PMIC chip events.
+drivers/mfd/Kconfig:1440:	  the irq_chip parts for handling the Mixed Signal chip events.
+drivers/mfd/wm831x-irq.c:438:static struct irq_chip wm831x_irq_chip = {
+drivers/mfd/stmfx.c:196:static struct irq_chip stmfx_irq_chip = {
+drivers/mfd/rc5t583-irq.c:310:static struct irq_chip rc5t583_irq_chip = {
+drivers/mfd/ioc3.c:71:static struct irq_chip ioc3_irq_chip = {
+drivers/mfd/mt6358-irq.c:131:static struct irq_chip mt6358_irq_chip = {
+drivers/mfd/tps65217.c:72:static struct irq_chip tps65217_irq_chip = {
+drivers/mfd/arizona-irq.c:39:	return regmap_irq_get_virq(arizona->irq_chip, irq);
+drivers/mfd/arizona-irq.c:176:static struct irq_chip arizona_irq_chip = {
+drivers/mfd/arizona-irq.c:348:				  0, irq, &arizona->irq_chip);
+drivers/mfd/arizona-irq.c:414:			    arizona->irq_chip);
+drivers/mfd/arizona-irq.c:440:	regmap_del_irq_chip(virq, arizona->irq_chip);
+drivers/mfd/rn5t618.c:91:	const struct regmap_irq_chip *irq_chip = NULL;
+drivers/mfd/rn5t618.c:99:		irq_chip = &rc5t619_irq_chip;
+drivers/mfd/rn5t618.c:110:				       0, irq_chip, &rn5t618->irq_data);
+drivers/mfd/twl6030-irq.c:112:	struct irq_chip		irq_chip;
+drivers/mfd/twl6030-irq.c:339:	irq_set_chip_and_handler(virq,  &pdata->irq_chip, handle_simple_irq);
+drivers/mfd/twl6030-irq.c:403:	 * clone dummy irq_chip since PIH can't *do* anything
+drivers/mfd/twl6030-irq.c:405:	twl6030_irq->irq_chip = dummy_irq_chip;
+drivers/mfd/twl6030-irq.c:406:	twl6030_irq->irq_chip.name = "twl6030";
+drivers/mfd/twl6030-irq.c:407:	twl6030_irq->irq_chip.irq_set_type = NULL;
+drivers/mfd/twl6030-irq.c:408:	twl6030_irq->irq_chip.irq_set_wake = twl6030_irq_set_wake;
+drivers/mfd/cs42l43.c:863:	cs42l43->irq_chip = cs42l43_irq_chip;
+drivers/mfd/cs42l43.c:864:	cs42l43->irq_chip.irq_drv_data = cs42l43;
+drivers/mfd/cs42l43.c:889:				       &cs42l43->irq_chip, &cs42l43->irq_data);
+drivers/mfd/rohm-bd718x7.c:167:		return dev_err_probe(&i2c->dev, ret, "Failed to add irq_chip\n");
+drivers/pci/msi/irqdomain.c:92:	struct irq_chip *chip = info->chip;
+drivers/pci/controller/pcie-altera-msi.c:54:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-altera-msi.c:77:static struct irq_chip altera_msi_irq_chip = {
+drivers/pci/controller/pcie-altera-msi.c:102:static struct irq_chip altera_msi_bottom_irq_chip = {
+drivers/pci/controller/pcie-apple.c:178:static struct irq_chip apple_msi_top_chip = {
+drivers/pci/controller/pcie-apple.c:194:static struct irq_chip apple_msi_bottom_chip = {
+drivers/pci/controller/pcie-apple.c:302:static struct irq_chip apple_port_irqchip = {
+drivers/pci/controller/pcie-apple.c:359:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/vmd.c:163: * and irq_chip to set this up.
+drivers/pci/controller/vmd.c:209:static struct irq_chip vmd_msi_controller = {
+drivers/pci/controller/pcie-rockchip-host.c:518:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-rcar-host.c:609:static struct irq_chip rcar_msi_top_chip = {
+drivers/pci/controller/pcie-rcar-host.c:661:static struct irq_chip rcar_msi_bottom_chip = {
+drivers/pci/controller/dwc/pcie-designware-host.c:43:static struct irq_chip dw_pcie_msi_irq_chip = {
+drivers/pci/controller/dwc/pcie-designware-host.c:93:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pcie-designware-host.c:172:static struct irq_chip dw_pci_msi_bottom_irq_chip = {
+drivers/pci/controller/dwc/pcie-keembay.c:237:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pci-dra7xx.c:256:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pcie-dw-rockchip.c:87:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pcie-dw-rockchip.c:115:static struct irq_chip rockchip_intx_irq_chip = {
+drivers/pci/controller/dwc/pcie-uniphier.c:206:static struct irq_chip uniphier_pcie_irq_chip = {
+drivers/pci/controller/dwc/pcie-uniphier.c:231:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pcie-designware.h:373:	struct irq_chip		*msi_irq_chip;
+drivers/pci/controller/dwc/pci-keystone.c:240:static struct irq_chip ks_pcie_msi_irq_chip = {
+drivers/pci/controller/dwc/pci-keystone.c:381:static struct irq_chip ks_pcie_intx_irq_chip = {
+drivers/pci/controller/dwc/pci-keystone.c:613:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/dwc/pci-keystone.c:656:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-iproc-msi.c:168:static struct irq_chip iproc_msi_irq_chip = {
+drivers/pci/controller/pcie-iproc-msi.c:240:static struct irq_chip iproc_msi_bottom_irq_chip = {
+drivers/pci/controller/pcie-iproc-msi.c:324:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-nwl.c:318:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-nwl.c:351:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-nwl.c:361:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-nwl.c:397:static struct irq_chip nwl_intx_irq_chip = {
+drivers/pci/controller/pcie-xilinx-nwl.c:421:static struct irq_chip nwl_msi_irq_chip = {
+drivers/pci/controller/pcie-xilinx-nwl.c:446:static struct irq_chip nwl_irq_chip = {
+drivers/pci/controller/pcie-mediatek.c:417:static struct irq_chip mtk_msi_bottom_irq_chip = {
+drivers/pci/controller/pcie-mediatek.c:473:static struct irq_chip mtk_msi_irq_chip = {
+drivers/pci/controller/pcie-mediatek.c:592:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-cpm.c:176:static struct irq_chip xilinx_cpm_leg_irq_chip = {
+drivers/pci/controller/pcie-xilinx-cpm.c:209:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx-cpm.c:248:static struct irq_chip xilinx_cpm_event_irq_chip = {
+drivers/pci/controller/pcie-xilinx-cpm.c:271:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-xilinx.c:206:static struct irq_chip xilinx_msi_top_chip = {
+drivers/pci/controller/pcie-xilinx.c:221:static struct irq_chip xilinx_msi_bottom_chip = {
+drivers/pci/controller/pcie-xilinx-dma-pl.c:249:static struct irq_chip xilinx_leg_irq_chip = {
+drivers/pci/controller/pcie-xilinx-dma-pl.c:376:static struct irq_chip xilinx_msi_irq_chip = {
+drivers/pci/controller/pcie-xilinx-dma-pl.c:400:static struct irq_chip xilinx_irq_chip = {
+drivers/pci/controller/pcie-xilinx-dma-pl.c:547:static struct irq_chip xilinx_pl_dma_pcie_event_irq_chip = {
+drivers/pci/controller/pcie-mediatek-gen3.c:480:static struct irq_chip mtk_msi_irq_chip = {
+drivers/pci/controller/pcie-mediatek-gen3.c:551:static struct irq_chip mtk_msi_bottom_irq_chip = {
+drivers/pci/controller/pcie-mediatek-gen3.c:652:static struct irq_chip mtk_intx_irq_chip = {
+drivers/pci/controller/pcie-mediatek-gen3.c:768:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/pci/controller/plda/pcie-plda.h:182:	const struct irq_chip *event_irq_chip;
+drivers/pci/controller/plda/pcie-plda-host.c:34:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/plda/pcie-plda-host.c:82:static struct irq_chip plda_msi_bottom_irq_chip = {
+drivers/pci/controller/plda/pcie-plda-host.c:137:static struct irq_chip plda_msi_irq_chip = {
+drivers/pci/controller/plda/pcie-plda-host.c:180:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/plda/pcie-plda-host.c:243:static struct irq_chip plda_intx_irq_chip = {
+drivers/pci/controller/plda/pcie-plda-host.c:293:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/plda/pcie-plda-host.c:357:static struct irq_chip plda_event_irq_chip = {
+drivers/pci/controller/plda/pcie-microchip-host.c:494:static struct irq_chip mc_event_irq_chip = {
+drivers/pci/controller/pci-ftpci100.c:292:	struct irq_chip *irqchip = irq_desc_get_chip(desc);
+drivers/pci/controller/pci-ftpci100.c:309:static struct irq_chip faraday_pci_irq_chip = {
+drivers/pci/controller/pci-mvebu.c:1045:static struct irq_chip intx_irq_chip = {
+drivers/pci/controller/pci-mvebu.c:1096:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pci-tegra.c:1536:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pci-tegra.c:1586:static struct irq_chip tegra_msi_top_chip = {
+drivers/pci/controller/pci-tegra.c:1640:static struct irq_chip tegra_msi_bottom_chip = {
+drivers/pci/controller/pcie-altera.c:640:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pci-hyperv.c:740:static struct irq_chip hv_arm64_msi_irq_chip = {
+drivers/pci/controller/pci-hyperv.c:2050:static struct irq_chip hv_msi_irq_chip = {
+drivers/pci/controller/mobiveil/pcie-mobiveil-host.c:84:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/mobiveil/pcie-mobiveil-host.c:333:static struct irq_chip intx_irq_chip = {
+drivers/pci/controller/mobiveil/pcie-mobiveil-host.c:356:static struct irq_chip mobiveil_msi_irq_chip = {
+drivers/pci/controller/mobiveil/pcie-mobiveil-host.c:381:static struct irq_chip mobiveil_msi_bottom_irq_chip = {
+drivers/pci/controller/pcie-brcmstb.c:664:static struct irq_chip brcm_msi_irq_chip = {
+drivers/pci/controller/pcie-brcmstb.c:680:	struct irq_chip *chip = irq_desc_get_chip(desc);
+drivers/pci/controller/pcie-brcmstb.c:721:static struct irq_chip brcm_msi_bottom_irq_chip = {
+drivers/pci/controller/pci-aardvark.c:279:	struct irq_chip irq_chip;
+drivers/pci/controller/pci-aardvark.c:1347:static struct irq_chip advk_msi_bottom_irq_chip = {
+drivers/pci/controller/pci-aardvark.c:1427:	irq_set_chip_and_handler(virq, &pcie->irq_chip,
+drivers/pci/controller/pci-aardvark.c:1439:static struct irq_chip advk_msi_irq_chip = {
+drivers/pci/controller/pci-aardvark.c:1488:	struct irq_chip *irq_chip;
+drivers/pci/controller/pci-aardvark.c:1499:	irq_chip = &pcie->irq_chip;
+drivers/pci/controller/pci-aardvark.c:1501:	irq_chip->name = devm_kasprintf(dev, GFP_KERNEL, "%s-irq",
+drivers/pci/controller/pci-aardvark.c:1503:	if (!irq_chip->name) {
+drivers/pci/controller/pci-aardvark.c:1508:	irq_chip->irq_mask = advk_pcie_irq_mask;
+drivers/pci/controller/pci-aardvark.c:1509:	irq_chip->irq_unmask = advk_pcie_irq_unmask;
+drivers/pci/controller/pci-aardvark.c:1530:static struct irq_chip advk_rp_irq_chip = {
+drivers/pci/controller/pci-xgene-msi.c:47:static struct irq_chip xgene_msi_top_irq_chip = {
+drivers/pci/controller/pci-xgene-msi.c:188:static struct irq_chip xgene_msi_bottom_irq_chip = {
+drivers/pci/controller/pci-xgene-msi.c:289:	struct irq_chip *chip = irq_desc_get_chip(desc);
+./.tmp_vmlinux1.syms:89416:ffffc00081826a30 d rp1_irq_chip
+./dovetail_phase1_check.log:7:[    2.604607] irqchip rp1_irq_chip is not pipeline-safe!
+grep: ./arch/arm64/boot/Image: binary file matches
+./.tmp_vmlinux2.syms:89416:ffffc00081a26a30 d rp1_irq_chip
+./System.map:89416:ffffc00081a26a30 d rp1_irq_chip
+grep: ./vmlinux: binary file matches
+./rp1_pipeline_safe_search.log:373:drivers/mfd/rp1.c:152:static struct irq_chip rp1_irq_chip = {
+./rp1_pipeline_safe_search.log:374:drivers/mfd/rp1.c:153:	.name            = "rp1_irq_chip",
+./rp1_pipeline_safe_search.log:376:drivers/mfd/rp1.c:337:		irq_set_chip_and_handler(irq, &rp1_irq_chip, handle_level_irq);
+./rp1_pipeline_safe_search.log:592:./.tmp_vmlinux1.syms:89416:ffffc00081826a30 d rp1_irq_chip
+./rp1_pipeline_safe_search.log:593:./dovetail_phase1_check.log:7:[    2.604607] irqchip rp1_irq_chip is not pipeline-safe!
+./rp1_pipeline_safe_search.log:595:./.tmp_vmlinux2.syms:89416:ffffc00081a26a30 d rp1_irq_chip
+./rp1_pipeline_safe_search.log:596:./System.map:89416:ffffc00081a26a30 d rp1_irq_chip
+grep: ./.tmp_vmlinux2: binary file matches
+./drivers/mfd/rp1.c:152:static struct irq_chip rp1_irq_chip = {
+./drivers/mfd/rp1.c:153:	.name            = "rp1_irq_chip",
+./drivers/mfd/rp1.c:337:		irq_set_chip_and_handler(irq, &rp1_irq_chip, handle_level_irq);
+grep: ./drivers/mfd/rp1.o: binary file matches
+grep: ./.tmp_vmlinux1: binary file matches
+grep: ./vmlinux.o: binary file matches

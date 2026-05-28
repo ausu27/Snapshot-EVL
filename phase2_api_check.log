@@ -1,0 +1,58 @@
+arch/alpha/kernel/osf_sys.c:1159:struct timex32 {
+arch/alpha/kernel/osf_sys.c:1188:SYSCALL_DEFINE1(old_adjtimex, struct timex32 __user *, txc_p)
+arch/alpha/kernel/osf_sys.c:1193:	/* copy relevant bits of struct timex. */
+arch/alpha/kernel/osf_sys.c:1194:	if (copy_from_user(&txc, txc_p, offsetof(struct timex32, time)) ||
+arch/alpha/kernel/osf_sys.c:1195:	    copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) - 
+arch/alpha/kernel/osf_sys.c:1196:			   offsetof(struct timex32, tick)))
+arch/alpha/kernel/osf_sys.c:1204:	if (copy_to_user(txc_p, &txc, offsetof(struct timex32, time)) ||
+arch/alpha/kernel/osf_sys.c:1205:	    (copy_to_user(&txc_p->tick, &txc.tick, sizeof(struct timex32) - 
+arch/alpha/kernel/osf_sys.c:1206:			  offsetof(struct timex32, tick))) ||
+arch/arm64/kernel/fpsimd.c:230:	 * resumes from dovetail_context_switch(), which always happen
+arch/x86/kvm/vmx/vmx.c:2509:		 * scheduling (see dovetail_context_switch()).
+include/evl/clock.h:50:				struct timex *tx);
+include/evl/clock.h:148:int evl_clock_adjust_time(struct evl_clock *clock, struct timex *tx)
+include/evl/sched/rt.h:25:#define EVL_FIFO_MAX_PRIO  (MAX_USER_RT_PRIO - 1)
+include/linux/dovetail.h:174:bool dovetail_context_switch(struct dovetail_altsched_context *out,
+include/linux/ptp_clock_kernel.h:238:	 * The 'freq' field in the 'struct timex' is in parts per
+include/trace/events/evl.h:807:	TP_PROTO(struct evl_clock *clock, struct timex *tx),
+include/trace/events/evl.h:812:		__field(struct timex *, tx)
+include/uapi/evl/clock.h:28:#define EVL_CLKIOC_ADJ_TIME	_IOR(EVL_CLOCK_IOCBASE, 4, struct timex)
+include/uapi/linux/timex.h:65:struct timex {
+kernel/dovetail.c:396:	 * switched in by dovetail_context_switch() over the oob
+kernel/evl/clock.c:525:			struct timex __user *u_tx)
+kernel/evl/clock.c:527:	struct timex tx;
+kernel/evl/clock.c:787:					(struct timex __user *)arg);
+kernel/evl/sched/core.c:661:		irq_pipeline_send_remote(RESCHEDULE_OOB_IPI, &rq->resched);
+kernel/evl/sched/core.c:679:	dovetail_resume_oob(&root->altsched);
+kernel/evl/sched/core.c:754:	dovetail_context_switch(&prev->altsched, &next->altsched);
+kernel/evl/sched/core.c:774:	 *                               back from dovetail_context_switch()
+kernel/evl/thread.c:1287:	else if (kprio >= MAX_USER_RT_PRIO)
+kernel/evl/thread.c:1288:		kprio = MAX_USER_RT_PRIO - 1;
+kernel/evl/tick.c:320:	irq_pipeline_send_remote(TIMER_OOB_IPI,
+kernel/sched/core.c:5357:		 * dovetail_context_switch() can deal with preempting
+kernel/sched/core.c:10160:bool dovetail_context_switch(struct dovetail_altsched_context *out,
+kernel/sched/core.c:10298:EXPORT_SYMBOL_GPL(dovetail_context_switch);
+tools/testing/selftests/ptp/testptp.c:43:static int clock_adjtime(clockid_t id, struct timex *tx)
+tools/testing/selftests/ptp/testptp.c:98:	 * The 'freq' field in the 'struct timex' is in parts per
+tools/testing/selftests/ptp/testptp.c:161:	struct timex tx;
+tools/testing/selftests/timers/adjtick.c:118:	struct timex tx1;
+tools/testing/selftests/timers/adjtick.c:172:	struct timex tx1;
+tools/testing/selftests/timers/change_skew.c:35:	struct timex tx;
+tools/testing/selftests/timers/change_skew.c:57:	struct timex tx;
+tools/testing/selftests/timers/freq-step.c:82:	struct timex txc;
+tools/testing/selftests/timers/freq-step.c:96:	struct timex txc;
+tools/testing/selftests/timers/leap-a-day.c:97:	struct timex tx;
+tools/testing/selftests/timers/leap-a-day.c:132:	struct timex tx;
+tools/testing/selftests/timers/leap-a-day.c:239:		struct timex tx;
+tools/testing/selftests/timers/leapcrash.c:30:	struct timex tx;
+tools/testing/selftests/timers/leapcrash.c:60:	struct timex tx;
+tools/testing/selftests/timers/raw_skew.c:96:	struct timex tx1, tx2;
+tools/testing/selftests/timers/set-tai.c:30:	struct timex tx;
+tools/testing/selftests/timers/set-tai.c:42:	struct timex tx;
+tools/testing/selftests/timers/skew_consistency.c:41:	struct timex tx;
+tools/testing/selftests/timers/valid-adjtimex.c:40:int clock_adjtime(clockid_t id, struct timex *tx)
+tools/testing/selftests/timers/valid-adjtimex.c:49:	struct timex tx;
+tools/testing/selftests/timers/valid-adjtimex.c:115:	struct timex tx;
+tools/testing/selftests/timers/valid-adjtimex.c:121:	memset(&tx, 0, sizeof(struct timex));
+tools/testing/selftests/timers/valid-adjtimex.c:197:	struct timex tmx = {};
+tools/testing/selftests/timers/valid-adjtimex.c:232:	struct timex tmx = {};

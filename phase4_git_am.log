@@ -1,0 +1,234 @@
+Applying: evl: add net core (EXPERIMENTAL)
+Applying: evl/net: neighbour: serialize cache access with BH
+Applying: evl/monitor: remove unused variable
+Applying: evl/poll: fix off-by-one in attaching the watchpoints
+Applying: evl/poll: limit clear_wait() to the active watchpoint range
+Applying: evl/tick: disable timer IPI before release
+Applying: uapi/evl: net: realign AF_OOB value with linux/socket.h
+Applying: evl/thread: use canonical way of updating current->comm
+Applying: evl/syscall: handle prctl() call form
+Applying: evl/lock: fix _nested call form
+Applying: uapi/evl: tighten strictness on signed comparison
+Applying: evl: kconfig: turn on DOVETAIL_DEBUG on CORE/NET debug
+Applying: evl/syscall: use new signature for handle_oob_syscall()
+Applying: evl: use <linux/stdarg.h> as appropriate
+Applying: evl/work: work around pedantic -Wcast-function-type
+Applying: evl/thread: output user/kernel type in killall debug
+Applying: evl/control: align on housekeeping API changes
+Applying: evl/poll: fix off-by-one write in collect_events()
+Applying: evl/observable: fix misnomer EVL_CLONE_MASTER -> EVL_CLONE_UNICAST
+Applying: evl/syscall: detect COMPAT syscall using arch_dovetail_is_syscall
+Applying: evl/thread: drop useless variable
+Applying: evl/net: make EVL_DEBUG_NET depend on EVL_NET
+Applying: evl/net: skbuff: clear linkage before sending in-band
+Applying: evl/wait: prevent LKSLEEP HM notification upon sleep on a gated event
+Applying: evl/net: skb: ask for DMA-usable memory to __netdev_alloc_oob_skb()
+Applying: evl/net: skb: request more headroom from skb alloc, reset calls
+Applying: evl/monitor: event: disable syscall restart on interrupted wait
+Applying: evl/monitor: event: differentiate causes for interrupted wait
+Applying: evl/thread: duly mark SIGDEBUG cause on direct signal
+Applying: evl/mutex: fix race in release path
+Applying: evl/mutex: simplify the release path
+Applying: evl/monitor: fix state flags update race on monitor exit
+Applying: evl/monitor: fix deadlock on gated event wait queue
+Applying: evl/mutex: remove redundant irq disabling
+Applying: evl/thread: release the oob state unconditionally on cleanup
+Applying: evl/thread: lockdep: enable tracking for thread->lock
+Applying: evl/mutex: lockdep: enable tracking for mutex->lock
+Applying: evl/wait: allow for optional follow_depend handler
+Applying: evl/mutex: disentangle locking dependencies
+Applying: evl/wait: move lock to the wait channel base
+Applying: evl/mutex: move lock to the wait channel base
+Applying: evl/wait: track ownership directly from the wait channel
+Applying: evl/mutex: introduce flat PI chain walk
+Applying: evl/mutex: sanitize dropping of owned mutexes at thread exit
+Applying: evl/thread: use assert_thread_pinned() instead of open code
+Applying: evl/poll: lockdep: force registration of dynamic lock class
+Applying: evl/wait: lockdep: introduce evl_init_wait_on_stack()
+Applying: evl/poll: lockdep: use evl_init_flag_on_stack()
+Applying: evl/poll: lockdep: delete group mutex at release
+Applying: evl/thread: hide exiting threads from sysfs attribute files
+Applying: evl/wait: allow for choosing the wait queue name
+Applying: evl/mutex: align PI/PP init helper names on wait queue API
+Applying: evl/mutex: introduce two-phase mutex tracking operations
+Applying: evl/mutex: use two-phase tracking on release
+Applying: evl/mutex: finalize conversion to set_mutex_owner()
+Applying: evl/mutex: skip mutex transfer to unblocked waiter
+Applying: evl/mutex: fix lock imbalance detection
+Applying: evl/mutex: fix mutex counting for T_WOLI|T_WEAK
+Applying: evl/mutex: fix unlock vs lock race
+Applying: evl/thread: use unambiguous symbol for no wchan
+Applying: evl/mutex: fix PI walk vs unlock race
+Applying: evl/mutex: switch to sleep-and-retry locking pattern
+Applying: evl/thread: add deferred wchan requeuing
+Applying: evl/wait: drop legacy reordering interface
+Applying: evl/wait: lockdep: set lock debugging dependency on CONFIG_LOCKDEP
+Applying: evl/mutex: undo PI walk on wait error
+Applying: evl/mutex: reschedule on failed locking attempt
+Applying: evl/monitor: fix racy access to wchan in targeted signaling
+Applying: evl/factory: use refcount_t for tracking references to elements
+Applying: evl/thread: enable notification on schedule overrun (T_WOSO)
+Applying: evl/sched: tp: notify on schedule overrun
+Applying: evl/thread: warn about failure to resume oob after trap
+Applying: evl/wait: share common wait-schedule code
+Applying: evl/wait: ensure timeout, break conditions supersede normal wakeups
+Applying: evl/monitor: fix event untracking race upon concurrent wakeups
+Applying: evl/mutex: drop wrong assertion
+Applying: evl/thread: lockdep: register lock class at init
+Applying: evl/lock: add might_hard_lock() to force lock class registration
+Applying: evl/net: fix inclusion guard
+Applying: evl/mutex: detect lingering PI/PP boost
+Applying: evl/mutex: alert only once on boost drop detection
+Applying: evl/mutex: extend check on in-band switch
+Applying: evl/mutex: prevent adjustment issue from getting worse
+Applying: evl/mutex: remove invalid assertion
+Applying: evl/mutex: detect inconsistent owner upon inner unlocking
+Applying: evl: rename thread status bits
+Applying: evl/mutex: ensure PP mutexes have strictly static priority
+Applying: evl/mutex: prevent lingering boost
+Applying: evl/monitor: wake up a single thread on posting a flag
+Applying: evl/mutex: account for unbalanced fast_lock/slow_unlock pattern
+Applying: evl/mutex: fix concurrent lock chain walks
+Applying: evl/mutex: fix null deref in evl_requeue_mutex_wait()
+Applying: evl/trace: fix evl_sleep_on() tracepoint
+Applying: evl/wait: drop debug leftover
+Applying: evl/mutex: fix inconsistent ownership information on release
+Applying: evl/timer: be careful about load tearing on reading the base
+Applying: evl/monitor: display monitor name in state attribute
+Applying: evl/wait: keep wchan owner locked on entry to chain walk
+Applying: evl/mutex: fix acquire/release race causing missed wakeup
+Applying: evl/factory: constify dev argument to devnode cb
+Applying: evl/wait: return the number of threads readied on flush
+Applying: evl/monitor: extend ungated event interface
+Applying: evl/sched: tp: deny changing plan on busy runqueues
+Applying: evl/sched: quota: fix ABBA issue on group removal
+Applying: evl/net: socket: drop obsolete refcounting
+Applying: evl/factory: constify dev argument to devnode cb (again)
+Applying: evl/sched: introduce sched_name() handler
+Applying: evl: remove module pointer from calls to class_create()
+Applying: evl/timer: fix SMP race in overrun handling
+Applying: evl/net: socket: drop .sendpage handler
+Applying: evl: increase default number of xbuffers
+Applying: evl/xbuf: fix spinlock recursion on the inbound path
+Applying: spidev: evl: include missing header
+Applying: drivers/gpio: evl: fix line event initialization
+Applying: evl/net: socket: align with signature change of sock_oob_detach()
+Applying: evl/net: skb: fix inconsistent locking of recycling queue
+Applying: evl/doc: fix typo in comment
+Applying: evl/lock: allow might_hard_lock() from the oob stage
+Applying: evl/mutex: remove useless dynamic lock key
+Applying: evl/thread: remove useless dynamic lock key
+Applying: evl/wait: remove useless dynamic lock key
+Applying: evl: sanitize uapi/ headers (enable CONFIG_UAPI_HEADER_TEST)
+Applying: Revert "evl/thread: remove useless dynamic lock key"
+Applying: evl/monitor: enable in-band read/write ops on event mask
+Applying: evl/monitor: enable oob I/O interface on event mask
+Applying: evl/monitor: fix return value of I/O interface calls
+Applying: evl/monitor: fix cleanup work from in-band wait upon signal
+Applying: evl/poll: wake up a single waiter per event type
+Applying: evl/monitor: use split read/write in-band wait queues
+Applying: evl/observable: fix POLLOUT handling
+Applying: evl/thread: add details to T_WOSS notification on trap
+Applying: evl/proxy: introduce proxied polling operation
+Applying: evl/proxy: use split read/write in-band wait queues
+Applying: evl/thread: prevent fault recursion on trap exit
+Applying: evl: wait: fix detection of non-blocking timeout value
+Applying: drivers/gpio: evl: merge fixups for v6.8
+Applying: evl: fix missing function declarations
+Applying: evl/factory: fix massive delay in element release
+Applying: evl/sched: introduce generic handler for manual round-robin
+Applying: evl/trace: align on upstream change to __assign_str()
+Applying: evl/factory: fix workqueue lockup on proxy disposal
+Applying: evl/factory: drop stale element data member
+Applying: evl/heap: fix gen_block_mask() prototype
+Applying: evl/syscall: align on new prctl() call form
+Applying: evl: introduce random number generators
+Applying: evl/net: fix endianness in protocol matching
+Applying: evl/net: socket: handle connection requests
+Applying: evl/net: socket: make bind, connect handlers optional
+Applying: evl/net: input: drop useless early rescheduling in RX
+Applying: evl/net: socket: introduce protocol-specific bits as union
+Applying: evl: group ancillary bits into a library section
+Applying: evl/lib: add helper to read uio vector into kvec
+Applying: evl/work: return work enqueuing status
+Applying: evl/lib: add dynamically-growable cache
+Applying: evl/stax: add support for spinning wait from the in-band stage
+Applying: evl/net: socket: add low-level memory charge routine
+Applying: evl/net: socket: rename sock_oob_detach() to sock_oob_destroy()
+Applying: evl/control: host net-related attributes at 'net' factory
+Applying: evl/lib: uio: rename vectored user I/O transfer operations
+Applying: evl/net: socket: de-constify I/O vector for send/receive ops
+Applying: evl/net: socket: fix endianness of sk_protocol
+Applying: evl/net: packet: fix size overflow detection
+Applying: evl/net: socket: handle shutdown requests
+Applying: evl/net: socket: fixup signature of bind, shutdown handlers
+Applying: evl/net: socket: handle release event
+Applying: evl/net: packet: copy back namelen on receipt if expected
+Applying: evl/net: add support for UDP protocol
+Applying: evl/net: dev: fix error unwinding on qdisc allocation failure
+Applying: evl/net: dev: enable oob for any netdevice
+Applying: evl/net: packet: fix unbalanced lock/unlock on error path
+Applying: evl/net: allow for eBPF-based filtering on early RX path
+Applying: evl/net: find the oob state at its new location
+Applying: evl/net: drop support for obsolete SCH_OOB queuing discipline
+Applying: evl/net: convert to oob device I/O interface
+Applying: evl/wait: drop obsolete field from static initializer
+Applying: evl/work: provide static work initializers
+Applying: evl/lib: uio: include missing header
+Applying: evl/net: skb: fix arguments to napi_pp_put_page()
+Applying: evl/net: add missing prototypes
+Applying: evl/net: skb: fix arguments to napi_pp_put_page() (v6.11)
+Applying: evl/net: skb: disable BH when recycling buffers
+Applying: evl/lib: uio: privatize internal helper
+Applying: evl/net: ipv4: fix debug format strings
+Applying: evl/net: ethernet: exclude VID 1 from allowed list
+Applying: scripts: git-evlabi: don't probe for obsolete header
+Applying: evl/net: dev, input: fix unsafe bitwise operations on RX
+Applying: evl/net: dev: perform lockless pre-check for eBPF filter
+Applying: net: dovetail: remove extraneous declaration
+Applying: evl/net: fix error return for EVL_NET_GETDEVFD
+Applying: evl/net: dev: enable real devices as oob ports
+Applying: evl/net: dev: send notice to console on input filter removal
+Applying: evl/net: ipv4: use atomic allocation when learning routes
+Applying: evl: advertise nickname in uname()
+Applying: evl/memory: allow system heap inspection using GDB
+Applying: evl/net: align on upstream rename: oob_data -> sk_oob_ctx
+Applying: evl/file: align on upstream rename: oob_data -> f_oob_ctx
+Applying: evl/factory: export factory building interface
+Applying: drivers/evl: hectic: release cdev region on unload
+Applying: drivers/evl: latmus: release cdev region on unload
+Applying: evl/net: provide neighbour solicitation service
+Applying: evl/net: input: detect invalid calls to napi_complete_oob()
+Applying: evl/net: input: do not wake up the RX thread on packet queuing
+Applying: evl/net: input: prevent missed polling
+Applying: evl/net: input: fold napi_complete_oob() into napi_schedule_oob()
+Applying: evl/net: dev: rename status flags for consistency
+Applying: evl/net: input: poll rework
+Applying: evl/net: skb: save cached copy of netdev address
+Applying: evl/net: skb: align on skbuff oob API updates
+Applying: evl/net: input: switch to oob-capable napi_poll()
+Applying: evl/net: input: ensure proper memory ordering on wake up
+Applying: evl/sched: use regular format for CPU id
+Applying: evl/net: output: acquire the stax for xmit
+Applying: evl/net: output: accurately hint at more traffic coming
+Applying: evl/net: packet: fix status value on binding error
+Applying: evl/net: socket: introduce set/get opt requests
+Applying: evl/net: skb: unionize exclusive fields in control block
+Applying: evl/net: skb: allow for data-less buffers on release
+Applying: evl/net: skb: fix notification on short write
+Applying: evl/lib: uio: add helper for incremental copy to uio
+Applying: evl/memory: fix page marking loop
+Applying: spidev: evl: rename uapi header according to standard
+Applying: evl/net: add support for packet timestamping
+Applying: evl/net: udp: implement support for oob_poll()
+Applying: evl/net: socket: intercept inband set/getsockopt() calls
+Applying: evl/clock: accept NULL timespec on EVL_CLKIOC_GET_RES
+Applying: evl: suffix all UAPI headers with -abi
+Applying: evl/net: skb: enable page pool for pseudo-devices
+Applying: evl/net: skb: move owning device to shared info
+Applying: evl/net: ipv4: do not solicit non-ARP neighbours
+Applying: evl/net: enable oob traffic via loopback devices
+Applying: evl/net: udp: stop tracking rmem consumption
+Applying: evl/net: dev: raise default RX/TX threads priority
+Applying: evl/net: dev: increase default page pool size
+Applying: evl/net: leave the experimental state

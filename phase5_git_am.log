@@ -1,0 +1,131 @@
+Applying: evl/net: udp: fix crash on oob_{read, write}
+Applying: evl/net: packet: fix crash on oob_{read, write}
+Applying: evl/net: ipv4: align on upstream changes to ip_route_output()
+Applying: evl/net: ipv4: solicit via global routing
+Applying: evl/net: output: export netif_tx_(un)lock() symbols
+Applying: evl/net: uapi: fix ABI issue with directly using sockaddr
+Applying: evl/net: dev: sanitize error path on failure to enable oob port
+Applying: evl/net: ipv4: extend solicitation timeout after probe delay
+Applying: evl/net: ipv4: add generic routing service
+Applying: evl/net: ipv4: add skb allocation delay to the delivery time
+Applying: evl/net: ipv4: do not error out on non-ARP solicited peer
+Applying: evl/lib: cache: add entry init helper
+Applying: evl/net: ipv4: use ARP pseudo-entry for lo device
+Applying: evl/net: udp: make receive slot label evl-ps friendly
+Applying: evl/net: ipv4: fix return status on interrupted solicitation
+Applying: evl/net: skb: fix in-band release path
+Applying: evl/net: add support for network interface taps
+Applying: evl/net: output: force trigger softirq via irq_work
+Applying: evl/net: ipv4: allow for device-directed solicitation
+Applying: evl/net: dev: add a helper to find a device by flags
+Applying: evl/net: dev: sanitize oob port activation/deactivation
+Applying: evl/net: dev: do not align buffer size on MTU for loopback devices
+Applying: evl/stat: extend internal statistics interface
+Applying: evl/net: dev: allow for querying device status and statistics
+Applying: evl/net: ethernet: fix buffer leak on transmit error
+Applying: evl/net: udp: fix buffer leak on dropping receive slot
+Applying: evl/net: arp: simplify pseudo-entry handling
+Applying: evl/net: arp: resolve broadcast address via a pseudo-entry
+Applying: evl/net: packet: use bound device directly in transmit
+Applying: evl/net: socket: drop get_netif handler
+Applying: evl/net: udp: return EINPROGRESS unconditionally if no cached route
+Applying: evl/net: ipv4: select direct routes by default
+Applying: evl/net: socket: deny solicitation if bound device is invalid
+Applying: evl/net: udp: honor SO_BINDTODEVICE on receive
+Applying: evl/net: stats: track checksum and buffer allocation failures
+Applying: evl/net: export hooks visible from NIC drivers
+Applying: evl: bump to ABI 42
+Applying: evl/random: make read() adapt to requested size
+Applying: evl/syscall: add missing header for EL0 compat mode
+Applying: arm64/evl: fpsimd: enable full oob preemption testing
+Applying: evl/net: net: clarify names of sysfs attributes
+Applying: evl/net: ipv4: fix solicitation timeout
+Applying: evl/net: arp: fix broadcast and multicast address resolution
+Applying: arm64: dovetail: Remove stale CONTEXT_USER (now CT_STATE_USER)
+Applying: mm: dovetail: fix MMF_DOVETAIL bit position
+Applying: locking: irq_pipeline: Rename MUTABLE_SPINLOCK to HYBRID_SPINLOCK
+Applying: kernel/entry: irq_pipeline: Do not leave .noinstr.text section
+Applying: kernel/irq/chip: Simplify should_feed_pipeline()
+Applying: kernel/irq/chip: Simplify may_start_flow()
+Applying: evl/net: ipv4: fix probing of connected/stale neighbour on solicit
+Applying: evl/net: tap: fix inconsistent lock usage when feeding nit
+Applying: net: dovetail: fix trashed error state on sock_inband_setopt_redirect()
+Applying: evl/net: udp: enforce SO_BROADCAST on unconnected transmit
+Applying: evl/net: udp: drop redundant RCU locking
+Applying: evl/net: ipv4: record flow information in route cache
+Applying: evl/net: udp: use source address obtained from routing
+Applying: evl/net: dev: clean ARP front cache on retirement
+Applying: arm64: fpsimd: dovetail: drop redundant hard irqs disabling
+Applying: net: dovetail: add missing membar to netif_enable_oob_port()
+Applying: net: fec: assume no oob traffic on oob mode switch
+Applying: e1000e: assume no oob traffic on oob mode switch
+Applying: igb: assume no oob traffic on oob mode switch
+Applying: igb: flush current oob pool on (re)configure
+Applying: evl/net: skb: always dequeue buffers prior to freeing them
+Applying: evl/net: qdisc: introduce .flush() operation
+Applying: evl/net: dev: ensure proper synchronization on device down
+Applying: evl/net: output: uncharge wmem on final drain
+Applying: evl/net: output: prevent queuing to downed device
+Applying: evl: kconfig: detect CONFIG_COMPACTION
+Applying: mm: dovetail: exclude CONFIG_TRANSPARENT_HUGEPAGE
+Applying: evl/net: udp: overhaul datagram delivery logic
+Applying: evl/net: packet: fix rmem tracking on delivery
+Applying: evl/net: udp: handle socket shutdown appropriately
+Applying: net: dovetail: use proper handler for net.core.max_oob_skb
+Applying: net: dovetail: export net.core.free_oob_skb via sysctl
+Applying: net: dovetail: skip XDP debug checks from napi_poll_oob()
+Applying: evl/net: ethernet: fix handling of VLAN encapsulation (802.1q, 802.1ad)
+Applying: evl/net: packet: fix up comments
+Applying: net: dovetail: hold sock lock across sock_oob_bind()
+Applying: evl/net: input: enable back traffic from loopback device
+Applying: evl/net: skb: fix leak on clone
+Applying: net: dovetail: add skb_oob_clone()
+Applying: evl/net: skb: switch to skb_oob_clone()
+Applying: evl/net: ethernet: update csum after header pull back
+Applying: evl/lib: cache: privatize init cache entry helper
+Applying: evl/lib: rculist: add dual stage RCU-aware list helpers
+Applying: evl/net: packet: rebase serialization on RCU
+Applying: evl/net: input: drop netrx_queue
+Applying: evl/net: socket: release final input skbs on deletion
+Applying: evl/tick: fix in-band tick deferral
+Applying: x86: irq_pipeline: handle deferred IRQ move from hard context
+Applying: x86: irq_pipeline: fix stale CONFIG_HAVE_KVM reference
+Applying: evl/poll: directly track oob-enabled files in watchpoints
+Applying: evl/syscall: add assertion on valid oob request
+Applying: evl/file: fix handling of file descriptor duplication
+Applying: fs: dovetail: enable fget(), fput() for oob callers
+Applying: evl/file: switch to fget() for lookups
+Applying: evl/file: register watchpoints on monitored files
+Applying: evl/file: drop obsolete global fd tree
+Applying: x86: irq_pipeline: include missing definitions for DOVETAIL=n
+Applying: dovetail: drop {install, uninstall, replace}_inband_fd() hooks
+Applying: arm64: irq_pipeline: include missing definitions for DOVETAIL=n
+Applying: arm64/evl: stop duplicating placeholders with CONFIG_EVL=n
+Applying: arm/evl: stop duplicating placeholders with CONFIG_EVL=n
+Applying: x86/evl: stop duplicating placeholders with CONFIG_EVL=n
+Applying: evl: drop redundant placeholders for CONFIG_EVL=n
+Applying: fs: dovetail: use oob state placeholder to reduce #ifdeffery
+Applying: evl/file: align on change to oob state location
+Applying: net: dovetail: use oob state placeholder to reduce #ifdeffery
+Applying: evl/net: socket: align on change to oob state location
+Applying: mm: dovetail: add oob state placeholder to reduce #ifdeffery
+Applying: evl/thread: provide oob mm state initializer
+Applying: evl/syscall: fix restartable syscall handling
+Applying: evl/thread: drop useless hard irqs masking in evl_wait_period()
+Applying: ptrace: dovetail: move call sites of PTSTOP/PTCONT events
+Applying: evl/thread: don't ready blocked threads on nop release
+Applying: evl/thread: overhaul ptracing support
+Applying: evl/thread: post ucall prior to kicking thread
+Applying: evl/monitor: drop useless status from wait request
+Applying: evl: bump to ABI 43
+Applying: genirq: irq_pipeline: keep hard irqs enabled for __cpu_disable()
+Applying: evl/wait: factor out info mask mapping to errno
+Applying: evl/memory: add RCU-synchronized memory release call
+Applying: evl/thread: postpone signal irqwork release to RCU reclamation
+Applying: x86: evl: fix dovetail fallback on NET_OOB=n
+Applying: arm: evl: fix dovetail fallback on NET_OOB=n
+Applying: arm64: evl: fix dovetail fallback on NET_OOB=n
+Applying: net: dovetail: export sock_oob_bind symbol
+Applying: evl/sched: lockdep: register lock class at init
+Applying: evl/monitor: fix missed wakeup on implicit gate release
+Applying: evl/poll: fix race while dropping watchpoints on file release

@@ -1,0 +1,354 @@
+Applying: evl/timer: nop timer base locking in uniprocessor case
+Applying: evl/thread: fix handling of self-directed ioctls
+Applying: uapi: evl: rename sigshadow to sigevl
+Applying: evl/tick: convert to new tick_install_proxy() interface
+Applying: evl/sched: quota: privatize find_quota_group()
+Applying: evl/timer: fix comment
+Applying: evl/sched: quota: limit max. prio to EVL_CORE_MAX_PRIO
+Applying: evl/sched: add temporal partitioning policy
+Applying: evl/sched: enable SCHED_TP when built in
+Applying: evl/control: export number of SCHED_TP partitions via sysfs
+Applying: evl/clock: silence false positive UMR warning
+Applying: evl/thread: detect recursive faults in out-of-band context
+Applying: evl/thread: handle EVL_THRIOC_SWITCH_OOB from OOB context only
+Applying: evl/sched: convert to the new dovetail_context_switch() interface
+Applying: evl/trace: fix evl_wakeup_thread event trace
+Applying: evl/tick: advertise the real device min/max delta values
+Applying: evl/clock: decrease default u-gravity value
+Applying: drivers/evl: fix signedness when summing latency values
+Applying: evl: add x86 support
+Applying: evl: clarify the EVL help string
+Applying: uapi/evl: include <linux/types.h> as recommended
+Applying: evl/thread: simplify and sanitize synchronization on join
+Applying: evl/thread: fix potential UMR in disposal handler
+Applying: evl: SIGDEBUG_UNDEFINED -> SIGDEBUG_NONE
+Applying: evl/file: export dummy evl_file_open(), evl_file_release() in disable case
+Applying: evl/wait: include scheduler bits from evl/wait.h
+Applying: evl/file: provide basic placeholders for building w/o EVL
+Applying: evl/trace: drop useless, broken include directives
+Applying: evl/tick: trace cycles used in programming next event
+Applying: evl/timer: always display timer name when tracing
+Applying: uapi/evl: fix thread state labels
+Applying: evl/timer: always inline timer insertion code
+Applying: evl/proxy: use lightweight write race detection
+Applying: evl/sched: privatize evl_pick_thread()
+Applying: evl/wait: inline wake up helpers
+Applying: evl/lock: inline locking helpers
+Applying: evl/tick: clearify, update comment
+Applying: evl/poll: __evl_signal_poll_events() should not reschedule
+Applying: evl/monitor: send POLLIN on exit of signaled monitor
+Applying: evl/thread: fix build w/o runtime stats
+Applying: evl/timer: define name prop unconditionally
+Applying: evl/clock: fix tracepoints for clock name
+Applying: evl/trace: rename worst case latency event
+Applying: uapi/evl: export ABI level
+Applying: evl/monitor: plan for extending the range of supported protocols
+Applying: evl/monitor: add event mask protocol
+Applying: evl/thread: stop leaking syscall restart bit on inband switch
+Applying: evl/thread: drop check for T_MOVED status bit
+Applying: evl/thread: grant some privileged capabilities while attached
+Applying: evl/monitor: fix event tracking for gates
+Applying: evl/monitor: fix notification on targeted signal
+Applying: evl/poll: drop evl_clear_poll_events()
+Applying: evl/monitor: finalize polling support
+Applying: evl/poll: return -EBADF on bad fd specification
+Applying: evl/monitor: fix polling support
+Applying: evl/monitor: honor O_NONBLOCK
+Applying: evl/poll: better align with epoll() interface
+Applying: evl/monitor: POLLERR on polling a gated event
+Applying: evl/poll: always signal POLLIN|POLLRDNORM combined
+Applying: evl/poll: return POLLNVAL on closed fd
+Applying: evl/factory: inherit clone device ownership
+Applying: drivers/evl: hectic: emit tracepoint on detecting fpu bug
+Applying: evl/thread: clarify comment
+Applying: evl: add explicit requirement for DEVTMPFS
+Applying: evl/thread: fix leaking ready state in evl_switch_inband()
+Applying: evl/sched: tp: finalize merging
+Applying: evl/sched: reorganize and clarify priority scales
+Applying: evl/sched: rename core scheduling class from rt to fifo
+Applying: evl/mutex: turn user debug options into dynamic settings
+Applying: drivers/evl: latmus: send (incomplete) last result bulk
+Applying: evl/control: export device name as symbol
+Applying: evl/thread: decode kernel-mode fault with ksyms
+Applying: evl/xbuf: fix rd/rd and wr/wr races
+Applying: evl/proxy: enable fixed-size write, polling for output to drain
+Applying: evl/clock: drop meaningless parameter from clock_sleep()
+Applying: evl/proxy: enable inband writes
+Applying: evl/timerfd: enable get/set from in-band context
+Applying: evl/control: export oob cpu list via sysfs
+Applying: drivers/evl: latmus: detect wrong CPU spec
+Applying: evl/control: add query for CPU state
+Applying: evl/sched: generalize use of evl_schedq_is_empty()
+Applying: evl/sched: inline queuing ops for the fifo policy
+Applying: evl/trace: wait: fix tracepoint names
+Applying: evl/sched: shorten rescheduling path when oob
+Applying: evl/thread: flesh out state info returned by EVL_THRIOC_GET_STATE
+Applying: evl/sched: remove wrong branch prediction hint
+Applying: evl/irq: exit_oob_irq() must return with irqs off
+Applying: evl/proxy: unblock waiters on release
+Applying: evl/clock: group core tick handling code
+Applying: drivers/evl: latmus: remove useless locking
+Applying: evl/irq: introduce evl_enter_irq(), evl_leave_irq()
+Applying: evl/clock: assume hard irqs off on clock tick
+Applying: evl/thread: drop obsolete comment
+Applying: evl/clock: drop unused variable in UP build
+Applying: evl/control: silence spurious UMR warning
+Applying: evl/clock: postpone proxy tick propagation
+Applying: drivers/evl: latmus: care for signedness in overrun calculation
+Applying: evl/clock: do not fast-forward on tick overrun
+Applying: evl: convert to irq_{enter, exit}_pipeline()
+Applying: evl/timer: re-inline timer insertion code
+Applying: evl/stats: fix build with feature disabled
+Applying: evl/clock: reinstate fast forward on tick overrun
+Applying: evl/clock: inline proxy tick propagation
+Applying: evl/lock: complete spinlock ops
+Applying: evl/thread: clear delay flag on removal of pending condition
+Applying: evl/thread: track count of remote wakeups
+Applying: evl/timer: prevent core timers from landing on unclocked CPUs
+Applying: evl: fix build w/ CONFIG_EVL disabled
+Applying: evl/thread: replace static cpumask w/ dynamic var
+Applying: evl/timer: clarify core timer interface
+Applying: evl/lock: fix all _irq* forms to use oob_irq_enable/disable()
+Applying: evl/monitor: clarify/fix oob_poll comments
+Applying: evl/poll: return -ELOOP on circular loop
+Applying: evl/clock: switch timer oob_read() return to u64 value
+Applying: evl/sched: properly annotate fall-through cases
+Applying: evl/file: do not pollute namespace if disabled
+Applying: include/evl: add device-related main header
+Applying: include/evl: file: remove placeholders
+Applying: evl/irq: fix build with CONFIG_EVL disabled
+Applying: evl/monitor: add support for recursive gate locking
+Applying: evl/wait: remove left over declarations
+Applying: include/evl: devices.h: read in poll.h
+Applying: evl/proxy: update file position if needed
+Applying: evl: uapi: fix license bits
+Applying: evl/thread: pull inband sched ABI details from uapi
+Applying: evl/thread: fix race while switching to inband
+Applying: evl/monitor: fix event un-tracking from gates
+Applying: evl/thread: detect preposterous absolute timeout in sleep_on
+Applying: evl/factory: assert refcount sanity
+Applying: evl/mutex: refcount mutex owners the kernel-side knows about
+Applying: evl/thread: clarify stat calculation
+Applying: evl/mutex: fold wait list into wchan
+Applying: evl/wait: fold wait list into wchan
+Applying: evl/{wait, mutex}: check for nklock state inconsistency
+Applying: evl/mutex: grab nklock down into PP commit code
+Applying: evl/monitor: commit PP unlocked in tryenter()
+Applying: evl/monitor: commit PP unlocked in enter_monitor()
+Applying: evl/sched: commit PP unlocked in __evl_schedule()
+Applying: evl/monitor: try grabbing mutex unlocked in tryenter()
+Applying: evl/monitor: call __enter_monitor() unlocked
+Applying: evl/monitor: fix event poller notification upon wakeup
+Applying: evl/monitor: do not send poll signals for gated events
+Applying: evl/monitor: call __exit_monitor() unlocked on wait op
+Applying: evl/monitor: call evl_wait_timeout() unlocked on wait op
+Applying: evl/wait: check for nklock state inconsistency
+Applying: evl/assert: make ugly lock checks conditional
+Applying: evl/lock: add true nesting support to the ugly one
+Applying: evl/wait: EIDRM supersedes other wait status when present
+Applying: evl/mutex: do not hold nklock across evl_schedule()
+Applying: evl/xbuf: write: do not resched holding the nklock
+Applying: evl/xbuf: read: do not resched holding the nklock
+Applying: evl/sched: do not preempt-schedule with irqs off
+Applying: evl/sched: assert __evl_schedule() call sites are nklock free
+Applying: evl/flag: add pre-locked form of operations
+Applying: evl/xbuf: convert to evl_raise_flag_locked()
+Applying: evl/{wait, mutex}: move lock out of wait channel
+Applying: evl/wait: remove evl_wait[_timeout]()
+Applying: evl/{wait, mutex}: downgrade waitqueue hard lock to evl_spinlock_t
+Applying: evl/thread: protect thread list with own lock
+Applying: evl/thread: enforce evl_unblock_thread() is called locklessly
+Applying: evl/thread: privatize evl_sleep_on(), evl_wakeup_thread()
+Applying: evl/thread: fix wakeup test for T_PEND condition
+Applying: evl/thread: ensure all blocking bits are lifted on kick
+Applying: evl/sched: fold mayday call service into watchdog handler
+Applying: evl/wait: defer handling of timeout and break conditions
+Applying: evl/wait: enable per-waitqueue lock
+Applying: evl/ksem: convert to per-waitqueue lock
+Applying: evl/thread: use finer-grained locking to resume oob
+Applying: evl/thread: check for nklock state consistency
+Applying: evl/sched: drop sched_yield service
+Applying: evl/sched: fix CPU migration race with __evl_schedule()
+Applying: evl/thread: drop obsolete page fault counter
+Applying: evl/thread: introduce lock to protect access to shared data
+Applying: evl/thread: close race in demotion process
+Applying: evl/sched: tp: fix locking for tp_schedule_next()
+Applying: evl/factory: defer device release to wq if stalled
+Applying: evl/mutex: convert to per-mutex lock
+Applying: evl/mutex: add deadlock detection
+Applying: evl/monitor: strip fundle status bits from element search
+Applying: evl/sched: quota: drop the ugly lock before rescheduling
+Applying: evl/lock: do not disable preemption with evl_spinlock
+Applying: evl: introduce runqueue lock
+Applying: evl/timer: annotate lock nesting for lockdep
+Applying: evl/mutex: fix circular dependency issue
+Applying: evl: remove obsolete nklock - aka "Xenomai's ugly big lock"
+Applying: evl/thread: cleanup breakpoint trap identification
+Applying: evl/irq: fix missed rescheduling trigger to remote CPU
+Applying: evl/sem: fix count leakage in non-blocking case
+Applying: evl/proxy: return -EBADF on invalid target fd
+Applying: uapi/evl: fptest: try harder not to shadow local variables
+Applying: evl/thread: fix inverted single-step bit flip
+Applying: evl/thread: switch potentially large cpumask to static storage
+Applying: evl/xbuf: fix POLLIN detection
+Applying: x86/build: evl: drop pointless include directives
+Applying: arm/build: evl: drop pointless include directives
+Applying: arm64/build: evl: drop pointless include directives
+Applying: evl: drop pointless include directive
+Applying: evl: rename main header for device drivers
+Applying: evl: add stage exclusion lock mechanism
+Applying: evl/proxy: run deferred output on dedicated wq
+Applying: evl/proxy: skip wq creation for mapping-only service
+Applying: evl/syscall: honor vDSO fallback calls in oob mode
+Applying: evl/stax: fix handling of special gate mask bits
+Applying: drivers/evl: hectic: add stax test helpers
+Applying: drivers/evl: add Kconfig help strings
+Applying: evl/device: include stax header
+Applying: evl/work: add oob mechanism for submitting in-band work
+Applying: evl/sem: general fix
+Applying: evl/sem: add evl_broadcast_ksem()
+Applying: evl/stax: notify oob exclusion via SIGDEBUG_STAGE_LOCKED
+Applying: evl/sem: fix and rename broadcast operation
+Applying: evl/work: synchronize on flag instead of sema4
+Applying: evl/thread: fix locking imbalance for INBAND_TASK_SCHEDULE
+Applying: evl/tick: allow building w/ CONFIG_DEBUG_FORCE_WEAK_PER_CPU on
+Applying: evl/thread: drop useless thread_info initializer
+Applying: evl/flag: clarify the pulse interface
+Applying: evl/flag: add clear operation
+Applying: evl: deny accessing attributes of clone devices
+Applying: evl/sched: move dovetail_leave_oob() out of lock
+Applying: evl: introduce synchronous breakpoint support
+Applying: evl/sched: caller of evl_force_thread() should raise T_KICKED
+Applying: evl/init: fix left over hiding ulat preset value
+Applying: evl/thread: honor SCHED_WEAK on return from RETUSER
+Applying: evl/thread: replace SIGEVL_ACTION_HOME with a RETUSER event
+Applying: evl/thread: fix rescheduling leak
+Applying: evl/clock: y2038: remove use of struct timex
+Applying: evl/stax: force the caller to in-band mode on WOSX
+Applying: evl/stax: export interface to modules
+Applying: evl/work: export interface to modules
+Applying: evl/control: plan for supporting a range of ABI revisions
+Applying: scripts: evl: add ABI info resolver
+Applying: evl: y2038: sanitize timespec handling at kernel boundary
+Applying: scripts: evl: fix misnomer
+Applying: scripts: git-evlabi: fix wording in help strings
+Applying: evl/syscall: handle_oob_syscall() does not return any value
+Applying: evl/proxy: do not discard undrained output upon disposal
+Applying: uapi/evl: sched: make interface C++ friendly
+Applying: evl: add support for compat mode
+Applying: evl/sched: quota: fix live update of quota limits
+Applying: evl/thread: switch back out-of-band at trap exit
+Applying: evl: advertise stream semantics where applicable
+Applying: evl/device: include semaphore header
+Applying: spidev: evl: enable out-of-band mode
+Applying: spidev: evl: -ENOTSUPP should not be seen by user
+Applying: evl/thread: send -EOPNOTSUPP to requests for unavailable sched policy
+Applying: uapi/evl: sched: evl_tp_paramlen() should receive immediate parameter
+Applying: uapi/evl: sched: follow common naming scheme for control ops
+Applying: evl/sched: tp: fix locking imbalance in control op
+Applying: evl/sched: tp: reschedule after control updates
+Applying: evl/sched: quota: reschedule after control updates
+Applying: evl/sched: tp: fix handling of input/output setup data
+Applying: evl/sched: tp: advance to next partition properly
+Applying: evl/timerfd: skip timer pinning for detached callers
+Applying: evl: factory: add element visibility
+Applying: evl/syscall: dump syscall symbolic name upon EPERM
+Applying: evl/sched: tp, quota: fix handling of control operation status
+Applying: evl/thread: add unblock, demote and yield operations
+Applying: evl/work: add safe async call form
+Applying: evl/proxy: fix race on output
+Applying: evl: introduce the observable element
+Applying: evl/observable: fix POLLERR condition
+Applying: evl/thread: trap observability issues
+Applying: evl: fix handling of NULL element names
+Applying: evl/xbuf: fix error handling on EFAULT
+Applying: evl/work: add evl_cancel_work() helper
+Applying: evl/proxy: add read side
+Applying: evl/proxy: fix handling of POLLIN by the in-band poll handler
+Applying: evl/proxy: properly detect atomic file position management
+Applying: evl/proxy: fix handling of POLLIN by the out-of-band poll handler
+Applying: evl/proxy: fix handling of short reads
+Applying: evl/proxy: deal with O_NONBLOCK for target file
+Applying: evl: kconfig: better qualify overhead of DEBUG_CORE
+Applying: evl: kconfig: better qualify scope of DEBUG_WOLI
+Applying: drivers/evl: latmus: add sirq latency measurement
+Applying: evl/thread: fix evl_run_kthread() wrapper
+Applying: evl/work: assert in-band is unstalled on sync call
+Applying: evl/factory: export creation, deletion routines
+Applying: uapi/evl: annotate label of user pointers in ABI
+Applying: evl/flags: add non-destructive evl_peek_flag()
+Applying: evl/sched: core: handle invalid CPU error as thread resumes oob
+Applying: drivers/evl: latmus: stop sampling timer at end of measurement
+Applying: evl/factory: fix element leakage on -EEXIST
+Applying: arm64/evl: move Kconfig switch to kernel features section
+Applying: arm/evl: move Kconfig switch to kernel features section
+Applying: evl/sched: improve naming to clarify traces
+Applying: drivers/evl: latmus: do not expect argument to EVL_LATIOC_RESET
+Applying: evl/syscall: rename conflicting tracer class
+Applying: include/evl: wait: do not drag tracepoints in
+Applying: evl/poll: allow for polling multiple heads concurrently
+Applying: evl: pull asm syscall defs from evl/uaccess.h
+Applying: evl/assert: add explicit dependency on irqstage definitions
+Applying: evl/poll: add (back) wrapper files to define oob_poll_wait
+Applying: evl/clock: make default gravity a per-arch setting
+Applying: evl/sched: fifo: drop rq rotation handler
+Applying: evl/sched: perform early lookup into FIFO class to pick threads
+Applying: evl/thread: align trap_entry/exit on new Dovetail rules
+Applying: evl/thread: do not switch stage in trap over NMI context
+Applying: evl/thread: rename evl_cancel_kthread() to evl_stop_kthread()
+Applying: evl/timer: remove timer priority logic
+Applying: evl/timer: unexport internal core call
+Applying: evl/clock: use common NMI-safe real-time clock read call
+Applying: evl/thread: non-EVL tasks might receive trap notifications
+Applying: drivers/gpio: evl: add out-of-band interface (CDEV_V1)
+Applying: evl trace:fix the occasional NULL pointer references
+Applying: evl/thread: remove the repeated inclusion of sched.h
+Applying: evl/sched: doc: clarify comment
+Applying: evl/clock: fix discrepancies in set_time() handler
+Applying: evl/thread: clarify naming, complete kthread-specific interface
+Applying: evl/thread: allow passing user-defined arg to kthread
+Applying: evl/thread: add evl_current_kthread()
+Applying: evl/crossing: add oob vs in-band synchronization barrier
+Applying: evl/file: convert to crossing mechanism for release
+Applying: evl/sched: do not consider oob stall on enabling preemption
+Applying: evl/lock: stop using the oob stall bit for protection
+Applying: evl/sched: convert run queue lock to hard lock
+Applying: evl/thread: convert thread lock to hard lock
+Applying: evl/wait: convert wait queue lock to hard lock
+Applying: evl/wait: reduce header dependency
+Applying: evl/thread: use static allocation for the ptsync barrier
+Applying: evl/file: convert file table lock to hard lock
+Applying: evl/poll: convert poll head lock to hard lock
+Applying: evl/xbuf: convert inbound buffer lock to hard lock
+Applying: evl/observable: convert observable, subscriber locks to hard locks
+Applying: drivers/evl: hectic: stop disabling preemption manually
+Applying: evl/thread: detect sleeping call with preemption disabled
+Applying: evl/mutex: convert mutex lock to hard lock
+Applying: evl/monitor: convert gate lock to hard lock
+Applying: evl/poll: convert waiter list lock to hard lock
+Applying: evl/lock: add preemption tracking
+Applying: evl/lock: fix assorted macro syntax breakages
+Applying: evl: convert to fallthrough markers
+Applying: evl: rename irq_pipeline_send_remote() to irq_send_oob_ipi()
+Applying: evl/thread: Fix duplicate included factory.h
+Applying: evl/thread: drop call to obsolete force_commit_memory()
+Applying: evl/sched: stop referring to obsolete MAX_USER_RT_PRIO
+Applying: evl/timer: add linear indexing method
+Applying: evl/sched: remove useless lookup-by-prio helper
+Applying: evl/sched: enable fast linear thread scheduler (non-scalable)
+Applying: evl: kconfig: introduce high per-CPU concurrency switch
+Applying: evl/wait: display waitqueue name in trace
+Applying: evl: kconfig: clarify wording
+Applying: evl/syscall: remove indirection via pointer table
+Applying: evl/sched: refine tracepoints
+Applying: evl/irq: fix SMP kernel boot on uniprocessor machine
+Applying: evl/trace: do not trace trace helpers
+Applying: evl/trace: fix thread mode printer
+Applying: evl/thread: trace trap exit in debug mode only
+Applying: drivers/evl: hectic: annotate fallthrough statement
+Applying: evl/thread: always switch oob on leaving a kernel mode fault
+Applying: evl/wait: accept reason for wake up in evl_wake_up()
+Applying: evl/wait: add memory shortage as a wait abort cause
+Applying: evl/factory: define access check for factories
+Applying: evl/wait: export wait channel of threads to /sys, ftrace
+Applying: evl/time: set EVL_NONBLOCK value to KTIME_MAX

@@ -1,0 +1,137 @@
+Applying: evenless: nothing but yet another co-kernel
+Applying: evl/thread: simplify inband request submission
+Applying: evl: add mapper element
+Applying: evl: add ksem API
+Applying: evl: add mutex API
+Applying: evl/syn: evl_release_syn() can only apply to current
+Applying: evl/thread: flatten cleanup work
+Applying: evl/wait: strip unused bits before overhaul
+Applying: evl/thread: move T_INBAND setting from mapping to init time
+Applying: evl/poller: fix initializers
+Applying: evl/thread: open code transition to in-band context
+Applying: evl/thread: explicitly check for rescheduling following evl_suspend_thread()
+Applying: evl/sched: remove automatic rescheduling on self-suspension
+Applying: evl/sched: substitute sched_lock with common preempt count protection
+Applying: evl/thread: sanitize naming for thread block call
+Applying: evl/drivers: include missing linux/uaccess.h
+Applying: evl/sched: __evl_schedule() may work on the current rq only
+Applying: evl/sched: bypass preemption check for blocked threads
+Applying: evl/wait: split mutex / wait queue support
+Applying: evl/lock: drop legacy debug
+Applying: evl/thread: simplify evl_resume_thread()
+Applying: evl/thread: split forcible suspension from event wait calls
+Applying: evl/thread: split forcible release and event-based wakeup calls
+Applying: evl: rename match inband kernel naming with evl_current()
+Applying: evl/wait, mutex: delegate wait channel unregistration to abort handler
+Applying: evl/thread: introduce T_WAIT to control periodic wait
+Applying: evl/thread: wait_period: remove useless dependency on nklock
+Applying: evl/flag: call evl_schedule() lock-free
+Applying: evl/monitor: call evl_schedule() lock-free at gate exit
+Applying: evl/sched: yield: call evl_schedule() lock-free
+Applying: evl/sem: call evl_schedule() lock-free
+Applying: evl/thread: call evl_schedule() lock-free
+Applying: evl/wait: call evl_schedule() lock-free
+Applying: evl/xbuf: call evl_schedule() lock-free
+Applying: evl/wait: introduce evl_wait_event_timeout()
+Applying: evl/flag: convert to evl_wait_event_timeout()
+Applying: evl/poller: convert to evl_wait_event_timeout()
+Applying: evl/ksem: convert to evl_wait_event_timeout()
+Applying: evl/timerfd: convert to evl_wait_event_timeout()
+Applying: evl/sched: drop yield to inband mechanism
+Applying: evl/monitor: reduce the scope of nklocked sections
+Applying: evl/timer: sort out deadlock issues in bolting
+Applying: evl/thread: hide info bits update into evl_wakeup_thread()
+Applying: evl/wait: remove more recursively (nk)locked paths
+Applying: evl/thread: unblock T_WAIT sleep condition too
+Applying: evl/thread: hide info bits update into evl_release_thread()
+Applying: evl/thread: delegate state bits test-and-clear to evl_wakeup_thread()
+Applying: evl/thread: remove more recursively (nk)locked paths
+Applying: evl/mutex: check consistency of lock/unlock requests
+Applying: evl/clock: map static clock ids to descriptors
+Applying: evl/monitor: add timeout to gate lock operation
+Applying: evl/sem: remove broadcast operation
+Applying: evl/sem: general fix of release operation
+Applying: evl/sem: switch to implicit single increment/decrement ops
+Applying: evl/sched: drop mapping of SCHED_FIFO,-prio to SCHED_WEAK,prio
+Applying: evl/thread: move mode setting to control device
+Applying: evl/thread: add service to return state information
+Applying: evl/clock: convert to common naming for sleep calls
+Applying: evl: rename sfilp to efilp
+Applying: evl/clock: add missing fops to builtin clocks
+Applying: evl/mutex: fix ceiling reference in PP init
+Applying: evl/thread: do not force convert SCHED_WEAK,0 to SCHED_NORMAL
+Applying: evl/factory: send ENXIO if core is unavailable
+Applying: evl/monitor: enter: fix timeout status
+Applying: evl/monitor: signal: send ESRCH if target is not found
+Applying: evl/monitor: add tryenter_gate() service
+Applying: evl/flag: switch to broadcast semantics
+Applying: evl/poller: fix, finalize synchronous multipexing support on efds
+Applying: evl/thread: convert to evl_drop_poll_table()
+Applying: evl/factory: use evl_release_element() for consistency
+Applying: evl/clock: remove superfluous checks for list emptiness
+Applying: evl/monitor: remove superfluous checks for list emptiness
+Applying: evl/wait: remove superfluous checks for list emptiness
+Applying: evl/thread: drop evl_start_thread() from the kernel API
+Applying: evl/wait: strip out useless includes
+Applying: evl/sched: drop unused helper
+Applying: evl/sched: clarify naming for inband tick timer
+Applying: evl/assert: clarify assertion about holding the global core lock
+Applying: evl/factory: detect duplicate element names early
+Applying: evl/poller: use plain kmutex for protecting the element
+Applying: evl/factory: robustify evl_element_name()
+Applying: evl/monitor: fix handling of evl_wait_timeout() status
+Applying: evl/sem: fix handling of evl_wait_timeout() status
+Applying: evl/sem: unblock waiters on release
+Applying: evl/mutex: export flushing routine
+Applying: evl/monitor: unblock waiters on release
+Applying: evl/timerfd: unblock waiters on release
+Applying: evl/xbuf: unblock waiters on release
+Applying: evl/poller: check for cyclic dependency - WIP
+Applying: evl/thread: rename SIGSHADOW to SIGEVL for clarity
+Applying: evl/thread: uapi: clarify comments
+Applying: evl/file: convert to new locking rules
+Applying: evl/config: increase default size of core heaps
+Applying: evl/config: drop obsolete reference to /proc
+Applying: evl/poller: always base timeouts on the monotonic clock
+Applying: evl/syscall: shorten syscall name prefix
+Applying: evl/logger: downgrade from element to utility device
+Applying: evl/trace: fix tautology in request name
+Applying: evl/poller: downgrade from element to utility device
+Applying: evl/proxy: introduce file proxy element
+Applying: evl/logger: remove - superseded by file proxy
+Applying: evl/mapper: remove - superseded by file proxy
+Applying: evl/flag: provide _nosched variants for all wakeup forms
+Applying: evl/poll: drop watchpoints on fd closure
+Applying: evl/lock: add evl_spin_lock API
+Applying: evl/file: convert to evl_spin_lock API
+Applying: evl/poll: convert to evl_spin_lock API
+Applying: evl/timerfd: sanitize ABI
+Applying: evl/monitor: add ungated signal-wait operations
+Applying: evl/sem: drop unused semaphore element
+Applying: evl/ksem: switch to evl_sem
+Applying: evl/timerfd: merge into clock support as a sub-function
+Applying: evl/control: move thread-related requests to the thread device
+Applying: evl/sched: quota: handle control request
+Applying: evl/sched: quota: use fixed limit on quota groups
+Applying: evl: review copyright information
+Applying: evl/sched: quota: make the period a dynamic tunable
+Applying: evl: shorten, sanitize Kconfig switches
+Applying: evl: rename evenless/ paths to evl/
+Applying: evl/sched: allow preemption enabling/disabling from in-band
+Applying: evl/clock: export evl_get_clock_by_fd()
+Applying: evl/file: export external services
+Applying: evl/sem: rename to evl_ksem for consistency with evl_kmutex
+Applying: evl: rework Kconfig layout
+Applying: evl/flag: fix wakeup reason in normal raise operation
+Applying: evl/thread: add T_BCAST to the WAKE and INFO masks
+Applying: drivers/evl: hectic: allow userland to init wait mode
+Applying: evl/trace: no need to re-check for ftracing availability
+Applying: evl/ksem: add static initializer
+Applying: evl/kmutex: disambiguate name of static initializer
+Applying: evl/flag: add static initializer
+Applying: evl/thread: raise default limit to 256 elements
+Applying: evl/assert: fix SMP build
+Applying: evl/init: fix SMP build
+Applying: evl/sched: fix SMP build
+Applying: evl/stat: use xchg() for swapping pointers
+Applying: uapi: evl: define the user available elements and utilities
